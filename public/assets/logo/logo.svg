@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- HomeOS mark: a roofline cradling a lit window. Authored for the prototype. -->
+  <path d="M5 14.2 16 5l11 9.2V25a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V14.2Z" stroke="#F4B860" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M11.5 27v-6.5a4.5 4.5 0 0 1 9 0V27" stroke="#F4B860" stroke-width="2.4" stroke-linejoin="round"/>
+  <circle cx="16" cy="13.2" r="2.2" fill="#F4B860"/>
+</svg>

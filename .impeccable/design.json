@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T12:32:39.693Z",
+  "title": "Design System: HomeOS",
+  "extensions": {
+    "source": {
+      "configurable": ".impeccable/config/product.config.ts (theme) -> injected as :root custom properties by src/lib/theme.ts",
+      "structural": "src/styles/tokens.css (type scale, spacing scale, component dimensions, z-layers, color-mix derived semantics)",
+      "components": "src/styles/globals.css"
+    },
+    "colorMeta": {
+      "night-background": {
+        "role": "neutral",
+        "displayName": "Night Background",
+        "cssVar": "--color-background",
+        "configurable": true,
+        "tonalRamp": [
+          "#08090A",
+          "#111315",
+          "#1A1D20",
+          "#262A2E",
+          "#3A3F44",
+          "#5A6066",
+          "#8A9096",
+          "#C6CACD"
+        ]
+      },
+      "chrome-night": {
+        "role": "neutral",
+        "displayName": "Chrome Night",
+        "cssVar": "--color-chrome",
+        "configurable": true,
+        "tonalRamp": [
+          "#070809",
+          "#0E1113",
+          "#171B1E",
+          "#22272B",
+          "#363C41",
+          "#565D63",
+          "#868D93",
+          "#C3C8CB"
+        ]
+      },
+      "surface-slate": {
+        "role": "neutral",
+        "displayName": "Surface Slate",
+        "cssVar": "--color-surface",
+        "configurable": true,
+        "tonalRamp": [
+          "#0B0D0E",
+          "#15191B",
+          "#1E2427",
+          "#2A3135",
+          "#3E474C",
+          "#5E686E",
+          "#8E979C",
+          "#C8CED1"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Surface Raised",
+        "cssVar": "--color-surface-elevated",
+        "configurable": true,
+        "tonalRamp": [
+          "#0D1113",
+          "#192024",
+          "#222B30",
+          "#2E393F",
+          "#425057",
+          "#627077",
+          "#929FA5",
+          "#CBD3D6"
+        ]
+      },
+      "surface-strong": {
+        "role": "neutral",
+        "displayName": "Surface Strong",
+        "cssVar": "--color-surface-strong",
+        "configurable": true,
+        "tonalRamp": [
+          "#121618",
+          "#20272A",
+          "#2A3337",
+          "#364145",
+          "#4A575C",
+          "#6A777C",
+          "#9AA5A9",
+          "#D0D7D9"
+        ]
+      },
+      "lamplight-amber": {
+        "role": "primary",
+        "displayName": "Lamplight Amber",
+        "cssVar": "--color-primary",
+        "configurable": true,
+        "tonalRamp": [
+          "#3A2508",
+          "#5E3D10",
+          "#8A5B1A",
+          "#B87C2C",
+          "#DE9E44",
+          "#F4B860",
+          "#F8D093",
+          "#FCE8C9"
+        ]
+      },
+      "amber-ink": {
+        "role": "neutral",
+        "displayName": "Amber Ink",
+        "cssVar": "--color-primary-foreground",
+        "configurable": true,
+        "tonalRamp": [
+          "#0A0A0A",
+          "#161616",
+          "#262626",
+          "#3A3A3A",
+          "#575757",
+          "#7D7D7D",
+          "#ABABAB",
+          "#DADADA"
+        ]
+      },
+      "soft-mint": {
+        "role": "secondary",
+        "displayName": "Soft Mint",
+        "cssVar": "--color-secondary",
+        "configurable": true,
+        "tonalRamp": [
+          "#0E2D24",
+          "#184A3C",
+          "#266B58",
+          "#3A8E77",
+          "#5DB39A",
+          "#8FD8C0",
+          "#B6E7D7",
+          "#DDF4EC"
+        ]
+      },
+      "warm-paper-text": {
+        "role": "neutral",
+        "displayName": "Warm Paper Text",
+        "cssVar": "--color-text",
+        "configurable": true,
+        "tonalRamp": [
+          "#2A2824",
+          "#45423D",
+          "#66625B",
+          "#8A857D",
+          "#AEA9A0",
+          "#D2CDC4",
+          "#F2EEE7",
+          "#FBF9F5"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Text Secondary",
+        "cssVar": "--color-text-secondary",
+        "configurable": true,
+        "tonalRamp": [
+          "#1E2222",
+          "#363B3B",
+          "#535959",
+          "#737A7A",
+          "#A3ABAB",
+          "#BFC5C5",
+          "#D9DDDD",
+          "#EFF1F1"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "cssVar": "--color-text-muted",
+        "configurable": true,
+        "note": "Lifted from #687174 so 12px meta clears 4.5:1 on every surface.",
+        "tonalRamp": [
+          "#1A1D1D",
+          "#2F3333",
+          "#4A5051",
+          "#656C6D",
+          "#7E8788",
+          "#A3AAAB",
+          "#C6CBCC",
+          "#E6E9E9"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "cssVar": "--color-border",
+        "configurable": true
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "cssVar": "--color-border-strong",
+        "configurable": true
+      },
+      "success": {
+        "role": "secondary",
+        "displayName": "Success (Soft Mint)",
+        "cssVar": "--color-success",
+        "configurable": true
+      },
+      "warning": {
+        "role": "primary",
+        "displayName": "Warning (Lamplight Amber)",
+        "cssVar": "--color-warning",
+        "configurable": true
+      },
+      "danger-rose": {
+        "role": "tertiary",
+        "displayName": "Danger Rose",
+        "cssVar": "--color-danger",
+        "configurable": true,
+        "tonalRamp": [
+          "#3A1414",
+          "#5E2222",
+          "#863535",
+          "#AE4F4F",
+          "#D06D6D",
+          "#E88C8C",
+          "#F1B3B3",
+          "#F9DADA"
+        ]
+      },
+      "ambient-glow": {
+        "role": "primary",
+        "displayName": "Ambient Glow",
+        "cssVar": "--color-ambient",
+        "configurable": true
+      },
+      "chart-1": {
+        "role": "tertiary",
+        "displayName": "Chart Blue",
+        "cssVar": "--color-chart-1",
+        "configurable": true,
+        "canonical": "#3987e5",
+        "tonalRamp": [
+          "#0f2440",
+          "#173a68",
+          "#21508f",
+          "#2b69b8",
+          "#3987e5",
+          "#6aa5ec",
+          "#9dc3f3",
+          "#d0e2f9"
+        ],
+        "alsoUsedFor": "Categorical identity only: members (--event-color), shopping and expense categories (--swatch). Not an accent."
+      },
+      "chart-2": {
+        "role": "tertiary",
+        "displayName": "Chart Orange",
+        "cssVar": "--color-chart-2",
+        "configurable": true,
+        "canonical": "#d95926",
+        "tonalRamp": [
+          "#3a160a",
+          "#5e2410",
+          "#853418",
+          "#ad451f",
+          "#d95926",
+          "#e5835c",
+          "#eeac92",
+          "#f7d5c8"
+        ],
+        "alsoUsedFor": "Categorical identity only: members (--event-color), shopping and expense categories (--swatch). Not an accent."
+      },
+      "chart-3": {
+        "role": "tertiary",
+        "displayName": "Chart Aqua",
+        "cssVar": "--color-chart-3",
+        "configurable": true,
+        "canonical": "#199e70",
+        "tonalRamp": [
+          "#06291d",
+          "#0b4330",
+          "#0f5e43",
+          "#147e5a",
+          "#199e70",
+          "#4dbb94",
+          "#88d3b7",
+          "#c3e9db"
+        ],
+        "alsoUsedFor": "Categorical identity only: members (--event-color), shopping and expense categories (--swatch). Not an accent."
+      },
+      "chart-4": {
+        "role": "tertiary",
+        "displayName": "Chart Yellow",
+        "cssVar": "--color-chart-4",
+        "configurable": true,
+        "canonical": "#c98500",
+        "tonalRamp": [
+          "#352300",
+          "#563900",
+          "#7a5100",
+          "#a16b00",
+          "#c98500",
+          "#dca63f",
+          "#e9c57f",
+          "#f4e2bf"
+        ],
+        "alsoUsedFor": "Categorical identity only: members (--event-color), shopping and expense categories (--swatch). Not an accent."
+      },
+      "chart-5": {
+        "role": "tertiary",
+        "displayName": "Chart Violet",
+        "cssVar": "--color-chart-5",
+        "configurable": true,
+        "canonical": "#9085e9",
+        "tonalRamp": [
+          "#211c4a",
+          "#342c73",
+          "#4a3f9b",
+          "#6c61c7",
+          "#9085e9",
+          "#aba3ef",
+          "#c8c2f4",
+          "#e4e0fa"
+        ],
+        "alsoUsedFor": "Categorical identity only: members (--event-color), shopping and expense categories (--swatch). Not an accent."
+      }
+    },
+    "derivedColors": [
+      {
+        "name": "--color-primary-soft",
+        "value": "color-mix(in oklab, var(--color-primary) 14%, transparent)",
+        "purpose": "Icon wells, active mobile-nav pill, empty-state icon."
+      },
+      {
+        "name": "--color-primary-faint",
+        "value": "color-mix(in oklab, var(--color-primary) 6%, transparent)",
+        "purpose": "Text-action hover wash."
+      },
+      {
+        "name": "--color-primary-border",
+        "value": "color-mix(in oklab, var(--color-primary) 45%, transparent)",
+        "purpose": "Hovered room-marker border."
+      },
+      {
+        "name": "--color-primary-hover",
+        "value": "color-mix(in oklab, var(--color-primary) 88%, white)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "--color-secondary-soft",
+        "value": "color-mix(in oklab, var(--color-secondary) 14%, transparent)",
+        "purpose": "Secondary tone fill."
+      },
+      {
+        "name": "--color-success-soft",
+        "value": "color-mix(in oklab, var(--color-success) 14%, transparent)",
+        "purpose": "Success tone fill, check hover."
+      },
+      {
+        "name": "--color-warning-soft",
+        "value": "color-mix(in oklab, var(--color-warning) 14%, transparent)",
+        "purpose": "Warning tone fill."
+      },
+      {
+        "name": "--color-danger-soft",
+        "value": "color-mix(in oklab, var(--color-danger) 16%, transparent)",
+        "purpose": "Alert icon wells."
+      },
+      {
+        "name": "--color-hover",
+        "value": "color-mix(in oklab, var(--color-text) 5%, transparent)",
+        "purpose": "Hover tint on nav, ghost and icon buttons."
+      },
+      {
+        "name": "--color-pressed",
+        "value": "color-mix(in oklab, var(--color-text) 9%, transparent)",
+        "purpose": "Pressed tint."
+      },
+      {
+        "name": "--color-glass",
+        "value": "color-mix(in oklab, var(--color-surface) 90%, transparent)",
+        "purpose": "Glass card fill."
+      },
+      {
+        "name": "--color-scrim",
+        "value": "color-mix(in oklab, var(--color-background) 72%, transparent)",
+        "purpose": "Dialog backdrop."
+      }
+    ],
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "cssVar": "--text-2xl",
+        "purpose": "Page titles and dashboard greeting; 20px (--text-xl) below 768px."
+      },
+      "title": {
+        "displayName": "Title",
+        "cssVar": "--text-base",
+        "purpose": "Card titles, stat-card labels, empty-state titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "cssVar": "--text-md",
+        "purpose": "Base text, list-row titles, nav items, buttons. Tabular figures on globally."
+      },
+      "label": {
+        "displayName": "Label",
+        "cssVar": "--text-xs",
+        "purpose": "Meta lines, badges, timestamps. --text-2xs (11px) only for mobile-nav labels and avatar overflow."
+      },
+      "numeric": {
+        "displayName": "Numeric (DM Mono)",
+        "cssVar": "--font-numeric",
+        "purpose": "Numbers and measurements: stat values, event times, counts, fractions, and quantities with their unit (\"5 kg\"). Standalone words in numeric columns (\"All day\") use Manrope."
+      }
+    },
+    "typeScale": [
+      {
+        "name": "--text-2xs",
+        "value": "0.6875rem"
+      },
+      {
+        "name": "--text-xs",
+        "value": "0.75rem"
+      },
+      {
+        "name": "--text-sm",
+        "value": "0.8125rem"
+      },
+      {
+        "name": "--text-md",
+        "value": "0.875rem"
+      },
+      {
+        "name": "--text-base",
+        "value": "0.9375rem"
+      },
+      {
+        "name": "--text-lg",
+        "value": "1.0625rem"
+      },
+      {
+        "name": "--text-xl",
+        "value": "1.25rem"
+      },
+      {
+        "name": "--text-2xl",
+        "value": "1.625rem"
+      },
+      {
+        "name": "--leading-tight",
+        "value": "1.2"
+      },
+      {
+        "name": "--leading-snug",
+        "value": "1.35"
+      },
+      {
+        "name": "--leading-normal",
+        "value": "1.5"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "--sidebar-width",
+        "value": "232px"
+      },
+      {
+        "name": "--sidebar-width-compact",
+        "value": "84px"
+      },
+      {
+        "name": "--header-height",
+        "value": "60px"
+      },
+      {
+        "name": "--mobile-nav-height",
+        "value": "68px"
+      },
+      {
+        "name": "--nav-item-height",
+        "value": "44px"
+      },
+      {
+        "name": "--control-height",
+        "value": "40px"
+      },
+      {
+        "name": "--control-height-sm",
+        "value": "32px"
+      },
+      {
+        "name": "--touch-target",
+        "value": "44px"
+      },
+      {
+        "name": "--icon-sm",
+        "value": "16px"
+      },
+      {
+        "name": "--icon-md",
+        "value": "20px"
+      },
+      {
+        "name": "--icon-lg",
+        "value": "24px"
+      },
+      {
+        "name": "--content-max",
+        "value": "1480px"
+      },
+      {
+        "name": "--z-sticky",
+        "value": "20"
+      },
+      {
+        "name": "--z-nav",
+        "value": "30"
+      },
+      {
+        "name": "--z-toast",
+        "value": "60"
+      },
+      {
+        "name": "digitalHouse.roomZoom",
+        "value": "2.6",
+        "note": "Configurable zoom factor for room close-ups (product.config.ts)."
+      },
+      {
+        "name": "rooms[].focus",
+        "value": "percent x/y",
+        "note": "Configurable close-up center point per room."
+      },
+      {
+        "name": "assets.scene.markerFootprint",
+        "value": "21.5% x 12.6%",
+        "note": "Configurable minimum marker size, so all markers read as one consistent size. The scene art has no baked-in labels."
+      },
+      {
+        "name": "calendar.monthCellLimit",
+        "value": "2",
+        "note": "Configurable pills per month cell before \"+n more\"."
+      },
+      {
+        "name": "calendar.householdColorIndex",
+        "value": "3",
+        "note": "Configurable chart slot for whole-household events."
+      },
+      {
+        "name": "month-cell min-height",
+        "value": "104px (54px compact)"
+      },
+      {
+        "name": "event-pill height",
+        "value": "22px"
+      },
+      {
+        "name": "input height",
+        "value": "42px"
+      },
+      {
+        "name": "member-toggle min column",
+        "value": "132px"
+      },
+      {
+        "name": "task-card min-height",
+        "value": "68px"
+      },
+      {
+        "name": "task-card open button",
+        "value": "44px (--touch-target)"
+      },
+      {
+        "name": "task-group count capsule",
+        "value": "20px"
+      },
+      {
+        "name": "filter chip height",
+        "value": "32px (--control-height-sm)"
+      },
+      {
+        "name": "choice pill height",
+        "value": "38px"
+      },
+      {
+        "name": "task detail label column / row",
+        "value": "120px / 48px"
+      },
+      {
+        "name": "task detail action height",
+        "value": "46px"
+      },
+      {
+        "name": "task progress ring",
+        "value": "132px"
+      },
+      {
+        "name": "quick-add columns",
+        "value": "minmax(0,1fr) 96px 150px auto; <560: 76px 1fr auto with name full row"
+      },
+      {
+        "name": "quick-add submit height",
+        "value": "42px (matches input)"
+      },
+      {
+        "name": "shopping-row detailed min-height",
+        "value": "56px"
+      },
+      {
+        "name": "category swatch",
+        "value": "10px"
+      },
+      {
+        "name": "summary bar",
+        "value": "4px"
+      },
+      {
+        "name": "donut",
+        "value": "196px, 26px stroke, 2px surface gap between segments"
+      },
+      {
+        "name": "donut dim opacity",
+        "value": "0.28 (legend rows 0.55)"
+      },
+      {
+        "name": "trend plot",
+        "value": "200px plot, 40px axis column, 28px label band"
+      },
+      {
+        "name": "trend bar",
+        "value": "min(24px, 60%) wide, 4px top radius"
+      },
+      {
+        "name": "expense tile value",
+        "value": "26px DM Mono (--text-2xl)"
+      },
+      {
+        "name": "legend row",
+        "value": "42px"
+      },
+      {
+        "name": "expense row",
+        "value": "56px min, 36px icon well"
+      },
+      {
+        "name": "maintenance-card min-height",
+        "value": "72px, 40px icon well"
+      },
+      {
+        "name": "home health cell",
+        "value": "2px inset top rule in tone, 20px DM Mono count"
+      },
+      {
+        "name": "asset detail",
+        "value": "56px icon well, 40px fact rows, 44px action"
+      },
+      {
+        "name": "service history node",
+        "value": "28px, 1px connector"
+      },
+      {
+        "name": "member card avatar",
+        "value": "64px + 3px gap + 2px identity ring"
+      },
+      {
+        "name": "profile avatar",
+        "value": "56px + 3px gap + 2px identity ring"
+      },
+      {
+        "name": "profile tab panel",
+        "value": "min-height 200px"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "card",
+        "cssVar": "--shadow-card",
+        "value": "0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6)",
+        "purpose": "Cards and stat tiles at rest."
+      },
+      {
+        "name": "elevated",
+        "cssVar": "--shadow-elevated",
+        "value": "0 1px 0 rgba(255,255,255,0.05) inset, 0 16px 40px -16px rgba(0,0,0,0.75)",
+        "purpose": "Room markers floating over the scene."
+      },
+      {
+        "name": "overlay",
+        "cssVar": "--shadow-overlay",
+        "value": "0 24px 64px -12px rgba(0,0,0,0.8)",
+        "purpose": "Modals, drawers, toasts."
+      },
+      {
+        "name": "focus-ring",
+        "cssVar": "--focus-ring",
+        "value": "0 0 0 2px var(--color-background), 0 0 0 4px var(--color-primary)",
+        "purpose": "Every :focus-visible; replaces the outline."
+      },
+      {
+        "name": "scene-frame-glow",
+        "value": "radial-gradient(90% 80% at 50% 55%, color-mix(in oklab, var(--color-ambient) 7%, transparent), transparent 70%) over var(--color-chrome)",
+        "purpose": "Ambient light behind the house in the Digital House scene frame (background, not box-shadow)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "fast",
+        "cssVar": "--motion-fast",
+        "value": "150ms",
+        "purpose": "Color, background and border changes."
+      },
+      {
+        "name": "base",
+        "cssVar": "--motion-base",
+        "value": "200ms",
+        "purpose": "Fades, marker lift, skip link."
+      },
+      {
+        "name": "slow",
+        "cssVar": "--motion-slow",
+        "value": "250ms",
+        "purpose": "Dialogs, toasts, progress fills."
+      },
+      {
+        "name": "ease-out",
+        "cssVar": "--ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "The only easing. prefers-reduced-motion collapses all durations to 0.01ms."
+      },
+      {
+        "name": "chart transitions",
+        "value": "opacity 200ms (donut dim), background 150ms (bars), tooltip opacity + 4px translate 150ms, summary/progress fills 250ms",
+        "purpose": "All on the house easing; reduced motion collapses them."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop",
+        "value": "1200px",
+        "type": "viewport",
+        "purpose": "Full 232px sidebar at and above."
+      },
+      {
+        "name": "tablet",
+        "value": "768px",
+        "type": "viewport",
+        "purpose": "768-1199: compact 84px icon sidebar. Below: top header + bottom nav with More sheet."
+      },
+      {
+        "name": "dashboard-md",
+        "value": "640px",
+        "type": "container",
+        "purpose": "Dashboard two-column layout."
+      },
+      {
+        "name": "dashboard-lg",
+        "value": "980px",
+        "type": "container",
+        "purpose": "Dashboard three-column layout with stat column."
+      },
+      {
+        "name": "digital-house-wide",
+        "value": "1200px",
+        "type": "viewport",
+        "purpose": "Room panel inline as a sticky right column (340-380px); below, it opens in a Drawer (right on tablet, bottom sheet under 768px)."
+      },
+      {
+        "name": "room-tiles-3up",
+        "value": "480px",
+        "type": "container",
+        "purpose": "Rooms card: 2 tiles across below, 3 across with icon-plus-two-line tile layout at and above."
+      },
+      {
+        "name": "calendar-page-2col",
+        "value": "980px",
+        "type": "container (calendar)",
+        "purpose": "Calendar + Family Members left, sticky 280-320px Upcoming Events right; below: calendar, upcoming, members."
+      },
+      {
+        "name": "calendar-card-compact",
+        "value": "560px",
+        "type": "container (calendar-card), max-width",
+        "purpose": "Month cells 54px with up to three dots instead of pills; segmented switcher full row; period label 17px."
+      },
+      {
+        "name": "calendar-week-7col",
+        "value": "760px",
+        "type": "container (calendar-card)",
+        "purpose": "Week view 7 columns (320px days); stacked below."
+      },
+      {
+        "name": "split-2col",
+        "value": "900px",
+        "type": "container (split; Tasks, Shopping)",
+        "purpose": "Main + sticky 280-320px aside."
+      },
+      {
+        "name": "split-narrow",
+        "value": "560px",
+        "type": "container (split; Tasks, Shopping)",
+        "purpose": "560-899: aside as a 2-column grid under main. Below 560: aside stacks; .page-tabs segments flex: 1 0 auto, min-width: max-content (extra tabs scroll); Tasks filters become the chip strip; Shopping quick add wraps to two lines."
+      },
+      {
+        "name": "expenses-2col",
+        "value": "980px",
+        "type": "container (expenses)",
+        "purpose": "Tiles, then independent chart column (2fr) and list column (minmax(300px,1fr)); .expenses-page__col is display: contents below."
+      },
+      {
+        "name": "expenses-mid",
+        "value": "640px",
+        "type": "container (expenses)",
+        "purpose": "Tiles 3 across; breakdown full; transactions beside bills; trend full. Below: This Month spans, donut stacks above legend; order tiles, breakdown, transactions, bills, trend."
+      },
+      {
+        "name": "family-grid-4up",
+        "value": "640px",
+        "type": "container (split)",
+        "purpose": "Member grid 4 across at and above; 2 x 2 below."
+      }
+    ],
+    "deliberateDetails": [
+      {
+        "name": "scene mask #000",
+        "where": ".house-scene__image mask-image radial-gradient",
+        "note": "Opaque alpha stop of the mask, not a color. Deliberate; not a palette violation."
+      },
+      {
+        "name": "marker font clamp",
+        "value": "clamp(10px, 2.05cqi, 15px)",
+        "note": "Room-marker text scales with the scene container; deliberate component detail, not a type-scale step."
+      },
+      {
+        "name": "checkbox radius",
+        "value": "6px",
+        "note": "Shopping checkbox corner; deliberate component detail below the 10px control radius, not a scale step."
+      },
+      {
+        "name": "All day label",
+        "where": ".event-card__time.is-all-day",
+        "note": "A word in the numeric time column: set in Manrope 12px/600 secondary, not DM Mono."
+      },
+      {
+        "name": "trend bar radius",
+        "value": "4px 4px 0 0",
+        "note": "Dataviz data-end mark: rounded value end, square baseline. Deliberate component detail, not a radius-scale step (resolves the detector advisory)."
+      }
+    ],
+    "memberColors": {
+      "mechanism": "family[].colorIndex (zero-based chart slot) -> chartColor() -> inline --event-color via eventColorStyle(memberId). Household events use calendar.householdColorIndex.",
+      "assignments": [
+        {
+          "member": "Arun",
+          "colorIndex": 0,
+          "color": "chart-1 blue #3987e5"
+        },
+        {
+          "member": "Household",
+          "colorIndex": 1,
+          "color": "chart-2 orange #d95926"
+        },
+        {
+          "member": "Priya",
+          "colorIndex": 2,
+          "color": "chart-3 aqua #199e70"
+        },
+        {
+          "member": "Anu",
+          "colorIndex": 3,
+          "color": "chart-4 yellow #c98500"
+        },
+        {
+          "member": "Rahul",
+          "colorIndex": 4,
+          "color": "chart-5 violet #9085e9"
+        }
+      ],
+      "mixes": [
+        {
+          "use": "month event pill fill",
+          "value": "color-mix(in oklab, var(--event-color) 20%, var(--color-surface))"
+        },
+        {
+          "use": "month event pill border",
+          "value": "color-mix(in oklab, var(--event-color) 40%, transparent)"
+        },
+        {
+          "use": "compact week card fill / border",
+          "value": "14% over surface / 35% border"
+        },
+        {
+          "use": "agenda avatar marker",
+          "value": "22% tint over surface + 0 0 0 2px var(--event-color) ring"
+        },
+        {
+          "use": "dots and member-toggle rings",
+          "value": "var(--event-color) at full strength"
+        }
+      ],
+      "rule": "Events are always labelled by title and person; color is never the only signal."
+    },
+    "splitPage": {
+      "container": "split",
+      "classes": [
+        ".split-page",
+        ".split-grid",
+        ".split-main",
+        ".split-aside",
+        ".page-tabs"
+      ],
+      "usedBy": [
+        "Tasks",
+        "Shopping",
+        "Maintenance",
+        "Family"
+      ]
+    },
+    "categoryColors": {
+      "mechanism": "shoppingScreen.categoryColors (name -> zero-based chart slot; unmapped falls back to position) -> categorySwatch() -> inline --swatch.",
+      "assignments": [
+        {
+          "category": "Groceries",
+          "colorIndex": 0,
+          "color": "chart-1 blue #3987e5"
+        },
+        {
+          "category": "Household",
+          "colorIndex": 2,
+          "color": "chart-3 aqua #199e70"
+        },
+        {
+          "category": "Personal",
+          "colorIndex": 4,
+          "color": "chart-5 violet #9085e9"
+        }
+      ],
+      "uses": [
+        "10px round swatch beside the category name",
+        "4px summary bar fill (bought share, transform scaleX)"
+      ]
+    },
+    "chartPalette": {
+      "values": [
+        "#3987e5",
+        "#d95926",
+        "#199e70",
+        "#c98500",
+        "#9085e9"
+      ],
+      "slots": [
+        "0 blue",
+        "1 orange",
+        "2 aqua",
+        "3 yellow",
+        "4 violet"
+      ],
+      "role": "Categorical identity only. Brand amber (#F4B860) is primary/accent and is never a chart slot.",
+      "validation": {
+        "surface": "#15191B",
+        "lightnessBand": "pass",
+        "chromaFloor": ">= 0.1 pass",
+        "worstAdjacentCvdDeltaE": 8.4,
+        "normalVisionDeltaE": 19.8,
+        "minContrast": ">= 3:1 all slots"
+      },
+      "replaced": {
+        "values": [
+          "#F4B860",
+          "#8FD8C0",
+          "#6FB6E0",
+          "#E8956B",
+          "#B79CE0"
+        ],
+        "failures": [
+          "lightness band",
+          "chroma floor",
+          "amber vs orange normal-vision dE 9.6"
+        ]
+      },
+      "constraint": "Slot 0 (blue) and slot 4 (violet) must never be adjacent in any ordered or cyclic encoding (all-pairs CVD dE 1.9); check the donut wrap-around."
+    },
+    "expenseCategoryColors": {
+      "mechanism": "expenses.categories[].colorIndex -> expenseSwatch() -> inline --swatch; categories also carry icon.",
+      "donutOrder": [
+        {
+          "category": "Groceries",
+          "colorIndex": 0,
+          "color": "blue #3987e5",
+          "icon": "ShoppingCart"
+        },
+        {
+          "category": "Transport",
+          "colorIndex": 1,
+          "color": "orange #d95926",
+          "icon": "Car"
+        },
+        {
+          "category": "Bills",
+          "colorIndex": 4,
+          "color": "violet #9085e9",
+          "icon": "Zap"
+        },
+        {
+          "category": "Home",
+          "colorIndex": 3,
+          "color": "yellow #c98500",
+          "icon": "Home"
+        },
+        {
+          "category": "Other",
+          "colorIndex": 2,
+          "color": "aqua #199e70",
+          "icon": "Tag"
+        }
+      ],
+      "note": "Cycle validated including the wrap (Other aqua -> Groceries blue). Never sorted by value.",
+      "registryIconsAdded": [
+        "Zap",
+        "Tag",
+        "TrendingDown",
+        "TrendingUp"
+      ]
+    },
+    "maintenanceModel": {
+      "item": "intervalMonths (absent = one-off), history: { date, note, byId }[] newest first",
+      "markServiced": "Logs a service today. Recurring: reschedules to today + interval and stays open. One-off: completes. Success toast names the next due date; Undo restores the item exactly. Shared by Maintenance cards, Asset Details and the Digital House room panel rows. Replaces the reference \"Book\" button.",
+      "tabs": "Due Soon (overdue or within clock.dueSoonDays), Upcoming (later), History (all service records; replaces reference \"Completed\").",
+      "dueTone": "danger overdue, warning today / within dueSoonDays, neutral later (formatDueStatus).",
+      "detailPlacement": ">= 1200px viewport: inline in split aside under Home Health, always showing an item (selection else most urgent). Narrower: Drawer (right on tablet, bottom sheet on phone), rendered bare.",
+      "addModal": "What needs upkeep (required), Room, Type (General, Cooling, Water, Heating, Appliance, Laundry, Vehicle, Power), Next due (default today + 30), Repeat (Just once / 1, 3, 6, 12 months; default 6)."
+    },
+    "familyScreen": {
+      "layout": "Page header, full-width member grid, then split grid (profile in split-main, Family Activity in split-aside) with a 16px top gap.",
+      "identityHalo": "box-shadow: 0 0 0 3px <surface or tinted surface>, 0 0 0 5px var(--event-color). Member card avatar 64px, profile avatar 56px.",
+      "memberStats": "Open tasks + own events in the next familyScreen.upcomingDays (7).",
+      "profileTabs": "Tasks, Calendar, Expenses, Activity with counts; segments flex: 1 0 auto, track scrolls; panels min-height 200px; data panels end with Open <Screen> amber link.",
+      "removed": [
+        "Invite Member header action (primaryAction removed from config; prototype cannot send invites)",
+        "Quick Actions tiles (duplicated navigation)"
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action: amber fill, amber-ink text, 40px.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Add Task</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: var(--radius-sm, 10px); border: 1px solid transparent; font-family: var(--font-primary, Manrope, system-ui, sans-serif); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-btn-primary { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); } .ds-btn-primary:hover { background: color-mix(in oklab, var(--color-primary, #F4B860) 88%, white); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting action on strong slate with a hairline.",
+      "html": "<button class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: var(--radius-sm, 10px); border: 1px solid var(--color-border, rgba(255,255,255,0.08)); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font-family: var(--font-primary, Manrope, system-ui, sans-serif); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-btn-secondary:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); background: color-mix(in oklab, var(--color-surface-strong, #20272A) 85%, var(--color-text, #F2EEE7)); } .ds-btn-secondary:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-emphasis action; tint on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Skip</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: var(--radius-sm, 10px); border: 0; background: transparent; color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-primary, Manrope, system-ui, sans-serif); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-btn-ghost:hover { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-btn-ghost:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Tabs",
+      "kind": "chip",
+      "refersTo": "tab-selected",
+      "description": "Pill tabs; selected is solid amber, counts in DM Mono.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab is-selected\">Pending <span class=\"ds-tab-count\">7</span></button><button class=\"ds-tab\">Done <span class=\"ds-tab-count\">3</span></button></div>",
+      "css": ".ds-tabs { display: inline-flex; gap: 4px; } .ds-tab { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-primary, Manrope, system-ui, sans-serif); font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-tab:hover:not(.is-selected) { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-tab.is-selected { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); } .ds-tab:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-tab-count { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; opacity: 0.75; }"
+    },
+    {
+      "name": "Status Badges",
+      "kind": "chip",
+      "refersTo": "badge-pill",
+      "description": "Dot plus word, never color alone; pill and inline-dot variants.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-badge-pill ds-danger\"><span class=\"ds-dot\"></span>High</span><span class=\"ds-badge ds-badge-pill ds-warning\"><span class=\"ds-dot\"></span>Medium</span><span class=\"ds-badge ds-badge-inline ds-success\"><span class=\"ds-dot\"></span>Low</span></div>",
+      "css": ".ds-badges { display: flex; gap: 8px; align-items: center; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-badge { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; font-size: 0.75rem; font-weight: 500; color: var(--tone); } .ds-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--tone); } .ds-badge-pill { height: 22px; padding: 0 8px; border-radius: 999px; background: color-mix(in oklab, var(--tone) 14%, transparent); font-weight: 600; } .ds-danger { --tone: var(--color-danger, #E88C8C); } .ds-warning { --tone: var(--color-warning, #F4B860); } .ds-success { --tone: var(--color-success, #8FD8C0); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Slate card with hairline, soft shadow, title and amber View all.",
+      "html": "<section class=\"ds-card\"><header class=\"ds-card-head\"><h3 class=\"ds-card-title\">Pending Tasks</h3><a class=\"ds-card-action\" href=\"#\">View all</a></header><p class=\"ds-card-body\">Clean kitchen</p><p class=\"ds-card-meta\">Priya · Today</p></section>",
+      "css": ".ds-card { width: 320px; padding: 16px 20px 20px; background: var(--color-surface, #15191B); border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); color: var(--color-text, #F2EEE7); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-card-head { display: flex; align-items: center; justify-content: space-between; min-height: 28px; margin-bottom: 12px; } .ds-card-title { margin: 0; font-size: 0.9375rem; font-weight: 600; letter-spacing: -0.005em; } .ds-card-action { margin-right: -8px; padding: 4px 8px; border-radius: var(--radius-sm, 10px); color: var(--color-primary, #F4B860); font-size: 0.8125rem; font-weight: 600; text-decoration: none; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-card-action:hover { background: color-mix(in oklab, var(--color-primary, #F4B860) 6%, transparent); text-decoration: underline; text-underline-offset: 3px; } .ds-card-action:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-card-body { margin: 0; font-size: 0.875rem; font-weight: 600; } .ds-card-meta { margin: 0; font-size: 0.75rem; color: var(--color-text-muted, #7E8788); }"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "card",
+      "refersTo": "stat-card",
+      "description": "Dashboard stat tile: label, DM Mono number + unit, tone icon; lifts on hover.",
+      "html": "<a class=\"ds-stat\" href=\"#\"><span class=\"ds-stat-text\"><span class=\"ds-stat-label\">Tasks</span><span class=\"ds-stat-value\"><span class=\"ds-stat-num\">7</span> pending</span></span><svg class=\"ds-stat-icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5\"/><path d=\"m9 11 3 3L22 4\"/></svg></a>",
+      "css": ".ds-stat { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 280px; min-height: 78px; padding: 12px 16px 12px 20px; background: var(--color-surface, #15191B); border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); color: var(--color-text, #F2EEE7); font-family: var(--font-primary, Manrope, system-ui, sans-serif); text-decoration: none; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-stat:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); background: var(--color-surface-elevated, #192024); transform: translateY(-1px); } .ds-stat:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-stat-text { display: flex; flex-direction: column; } .ds-stat-label { font-size: 0.9375rem; font-weight: 600; line-height: 1.35; } .ds-stat-value { font-size: 0.9375rem; line-height: 1.35; color: var(--color-text-secondary, #A3ABAB); } .ds-stat-num { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; color: var(--color-text, #F2EEE7); } .ds-stat-icon { flex: none; color: var(--color-secondary, #8FD8C0); }"
+    },
+    {
+      "name": "Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "Chrome sidebar items; active gets amber icon, gradient wash and the 3px amber edge.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item is-active\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z\"/></svg>Home</a><a class=\"ds-nav-item\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg>Calendar</a></nav>",
+      "css": ".ds-nav { display: flex; flex-direction: column; gap: 4px; width: 208px; padding: 12px; background: var(--color-chrome, #0E1113); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-nav-item { position: relative; display: flex; align-items: center; gap: 12px; height: 44px; padding: 0 16px 0 12px; border-radius: var(--radius-sm, 10px); color: var(--color-text-secondary, #A3ABAB); font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-nav-item:hover { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-nav-item:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-nav-item.is-active { color: var(--color-text, #F2EEE7); font-weight: 600; background: linear-gradient(90deg, color-mix(in oklab, var(--color-primary, #F4B860) 20%, transparent), color-mix(in oklab, var(--color-primary, #F4B860) 5%, transparent)); } .ds-nav-item.is-active svg { color: var(--color-primary, #F4B860); } .ds-nav-item.is-active::before { content: ''; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 999px; background: var(--color-primary, #F4B860); }"
+    },
+    {
+      "name": "Room Marker",
+      "kind": "custom",
+      "refersTo": "room-marker",
+      "description": "Signature pill marker over the house scene; scales with the scene via container units; alert swaps icon and goes rose.",
+      "html": "<div class=\"ds-scene\"><a class=\"ds-marker\" href=\"#\"><span class=\"ds-marker-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9\"/></svg></span><span>Bedroom</span></a><a class=\"ds-marker is-alert\" href=\"#\"><span class=\"ds-marker-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m21.7 18-8-14a2 2 0 0 0-3.4 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg></span><span>Garage</span></a></div>",
+      "css": ".ds-scene { container-type: inline-size; width: 520px; display: flex; gap: 16px; padding: 24px; background: var(--color-background, #111315); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-marker { display: inline-flex; align-items: center; gap: 0.6em; padding: 0.4em 1em 0.4em 0.55em; border: 1px solid color-mix(in oklab, var(--color-secondary, #8FD8C0) 26%, var(--color-border-strong, rgba(255,255,255,0.14))); border-radius: 999px; background: color-mix(in oklab, var(--color-surface, #15191B) 97%, transparent); box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 16px 40px -16px rgba(0,0,0,0.75); color: var(--color-text, #F2EEE7); font-size: clamp(10px, 2.05cqi, 15px); font-weight: 600; line-height: 1.2; white-space: nowrap; text-decoration: none; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 200ms cubic-bezier(0.22,1,0.36,1); } .ds-marker:hover, .ds-marker:focus-visible { outline: none; transform: translateY(-2px); border-color: color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); background: var(--color-surface-elevated, #192024); } .ds-marker-icon { display: grid; place-items: center; width: 1.9em; height: 1.9em; border-radius: 999px; border: 1.5px solid var(--color-primary, #F4B860); color: var(--color-primary, #F4B860); } .ds-marker-icon svg { width: 1.05em; height: 1.05em; } .ds-marker.is-alert .ds-marker-icon { border-color: var(--color-danger, #E88C8C); background: color-mix(in oklab, var(--color-danger, #E88C8C) 16%, transparent); color: var(--color-danger, #E88C8C); }"
+    },
+    {
+      "name": "Room Tile",
+      "kind": "card",
+      "refersTo": "room-tile",
+      "description": "Selectable room tile; selected gets amber tint and border; alert gets rose icon well and Service due with alert icon.",
+      "html": "<div class=\"ds-tiles\"><button class=\"ds-tile is-selected\"><span class=\"ds-tile-icon\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3\"/><path d=\"M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z\"/></svg></span><span class=\"ds-tile-name\">Living Room</span><span class=\"ds-tile-meta\">2 tasks</span></button><button class=\"ds-tile is-alert\"><span class=\"ds-tile-icon\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.8L3 10.5V16c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg></span><span class=\"ds-tile-name\">Garage</span><span class=\"ds-tile-meta\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m21.7 18-8-14a2 2 0 0 0-3.4 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg>Service due</span></button></div>",
+      "css": ".ds-tiles { display: grid; grid-template-columns: repeat(2, 200px); gap: 12px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-tile { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 16px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface-elevated, #192024); color: var(--color-text, #F2EEE7); text-align: left; font: inherit; cursor: pointer; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-tile:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); transform: translateY(-1px); } .ds-tile:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-tile.is-selected { border-color: color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); background: color-mix(in oklab, var(--color-primary, #F4B860) 10%, var(--color-surface-elevated, #192024)); } .ds-tile-icon { display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 8px; border-radius: 999px; background: color-mix(in oklab, var(--color-primary, #F4B860) 14%, transparent); color: var(--color-primary, #F4B860); } .ds-tile-name { font-weight: 600; font-size: 0.875rem; } .ds-tile-meta { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; color: var(--color-text-muted, #7E8788); } .ds-tile.is-alert .ds-tile-icon { background: color-mix(in oklab, var(--color-danger, #E88C8C) 16%, transparent); color: var(--color-danger, #E88C8C); } .ds-tile.is-alert .ds-tile-meta { color: var(--color-danger, #E88C8C); font-weight: 600; }"
+    },
+    {
+      "name": "Room Close-up",
+      "kind": "custom",
+      "refersTo": "room-view",
+      "description": "16:9 frame zooming into the same scene asset at the room focus, with bottom shade and glass chip.",
+      "html": "<div class=\"ds-roomview\"><span class=\"ds-roomview-chip\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3\"/><path d=\"M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z\"/></svg>Living Room</span></div>",
+      "css": ".ds-roomview { position: relative; width: 340px; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background-color: var(--color-chrome, #0E1113); background-image: url('/assets/3d/home-house.png'), radial-gradient(60% 70% at 50% 50%, rgba(244,184,96,0.25), transparent); background-repeat: no-repeat; background-size: 260% auto, cover; background-position: 52% 70%, center; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-roomview::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in oklab, var(--color-background, #111315) 70%, transparent), transparent 45%); pointer-events: none; } .ds-roomview-chip { position: absolute; left: 12px; bottom: 12px; z-index: 1; display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px 4px 8px; border-radius: 999px; background: color-mix(in oklab, var(--color-surface, #15191B) 90%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); color: var(--color-text, #F2EEE7); font-size: 0.8125rem; font-weight: 600; } .ds-roomview-chip svg { color: var(--color-primary, #F4B860); }"
+    },
+    {
+      "name": "Panel Tab Track",
+      "kind": "chip",
+      "refersTo": "tab-track",
+      "description": "Room-panel tabs using the shared .segmented control, full width with equal segments; selected filled amber.",
+      "html": "<div class=\"ds-track\"><button class=\"ds-ttab is-selected\">Tasks <span class=\"ds-tcount\">1</span></button><button class=\"ds-ttab\">Shopping <span class=\"ds-tcount\">0</span></button><button class=\"ds-ttab\">Maintenance <span class=\"ds-tcount\">2</span></button></div>",
+      "css": ".ds-track { display: flex; width: 340px; padding: 3px; gap: 4px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-ttab { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 32px; padding: 0 12px; border: 0; border-radius: 999px; background: transparent; color: var(--color-text-secondary, #A3ABAB); font: inherit; font-size: 0.8125rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-ttab:hover:not(.is-selected) { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-ttab:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-ttab.is-selected { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); } .ds-tcount { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; opacity: 0.75; }"
+    },
+    {
+      "name": "Shopping Checkbox Row",
+      "kind": "input",
+      "refersTo": "checkbox-checked",
+      "description": "Compact shopping row (room panel): 20px square checkbox, 6px radius, touch-size hit area; checked fills mint and strikes the name.",
+      "html": "<ul class=\"ds-shop\"><li class=\"ds-shop-row is-done\"><button class=\"ds-check\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Milk\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-shop-name\">Milk</span><span class=\"ds-shop-qty\">2 L</span></li><li class=\"ds-shop-row\"><button class=\"ds-check\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Rice\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-shop-name\">Rice</span><span class=\"ds-shop-qty\">5 kg</span></li></ul>",
+      "css": ".ds-shop { width: 320px; margin: 0; padding: 0; list-style: none; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-shop-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 48px; padding: 4px 0; } .ds-shop-row + .ds-shop-row { border-top: 1px solid var(--color-border, rgba(255,255,255,0.08)); } .ds-check { position: relative; display: grid; place-items: center; width: 20px; height: 20px; padding: 0; border-radius: 6px; border: 1.5px solid var(--color-border-strong, rgba(255,255,255,0.14)); background: transparent; color: transparent; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-check::before { content: ''; position: absolute; inset: -12px; } .ds-check:hover { border-color: var(--color-secondary, #8FD8C0); } .ds-check:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-check[aria-checked='true'] { border-color: var(--color-secondary, #8FD8C0); background: var(--color-secondary, #8FD8C0); color: var(--color-primary-foreground, #161616); } .ds-shop-name { font-weight: 500; } .ds-shop-row.is-done .ds-shop-name { color: var(--color-text-muted, #7E8788); text-decoration: line-through; } .ds-shop-qty { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; color: var(--color-text-secondary, #A3ABAB); }"
+    },
+    {
+      "name": "Maintenance Row",
+      "kind": "custom",
+      "refersTo": "maintenance-row-icon",
+      "description": "Tone-tinted icon well, title, due badge (danger overdue, warning due soon), secondary sm Mark done.",
+      "html": "<div class=\"ds-mrow\"><span class=\"ds-micon\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.8L3 10.5V16c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg></span><span class=\"ds-mbody\"><span class=\"ds-mtitle\">Car Service</span><span class=\"ds-mmeta\"><span class=\"ds-mdot\"></span>overdue</span></span><button class=\"ds-mbtn\">Mark done</button></div>",
+      "css": ".ds-mrow { --tone: var(--color-danger, #E88C8C); display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; width: 340px; padding: 12px 0; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-micon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: var(--radius-sm, 10px); background: color-mix(in oklab, var(--tone) 16%, transparent); color: var(--tone); } .ds-mbody { display: flex; flex-direction: column; min-width: 0; } .ds-mtitle { font-weight: 600; } .ds-mmeta { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; font-weight: 500; color: var(--tone); } .ds-mdot { width: 6px; height: 6px; border-radius: 999px; background: var(--tone); } .ds-mbtn { height: 32px; padding: 0 12px; border-radius: var(--radius-sm, 10px); border: 1px solid var(--color-border, rgba(255,255,255,0.08)); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-mbtn:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); background: color-mix(in oklab, var(--color-surface-strong, #20272A) 85%, var(--color-text, #F2EEE7)); } .ds-mbtn:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-mbtn:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented-selected",
+      "description": "Tabs inside a surface-strong pill track; selected segment solid amber. Calendar view switcher.",
+      "html": "<div class=\"ds-seg\" role=\"tablist\"><button class=\"ds-seg-tab is-selected\" role=\"tab\" aria-selected=\"true\">Month</button><button class=\"ds-seg-tab\" role=\"tab\" aria-selected=\"false\">Week</button><button class=\"ds-seg-tab\" role=\"tab\" aria-selected=\"false\">Day</button></div>",
+      "css": ".ds-seg { display: inline-flex; gap: 4px; padding: 3px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-seg-tab { display: inline-flex; align-items: center; justify-content: center; min-width: 64px; height: 32px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; color: var(--color-text-secondary, #A3ABAB); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-seg-tab:hover:not(.is-selected) { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-seg-tab:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-seg-tab.is-selected { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "13px semibold label with muted (optional), 42px strong-slate input; amber focus border; danger border and message on error.",
+      "html": "<div class=\"ds-form\"><label class=\"ds-field\"><span class=\"ds-label\">Event</span><input class=\"ds-input\" placeholder=\"e.g. Parent–teacher meeting\"></label><label class=\"ds-field\"><span class=\"ds-label\">Location <span class=\"ds-opt\">(optional)</span></span><input class=\"ds-input is-invalid\" aria-invalid=\"true\" aria-describedby=\"ds-err\" value=\"\"><span class=\"ds-error\" id=\"ds-err\">Add a location or leave it empty.</span></label></div>",
+      "css": ".ds-form { display: flex; flex-direction: column; gap: 16px; width: 320px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-field { display: flex; flex-direction: column; gap: 6px; } .ds-label { font-size: 0.8125rem; font-weight: 600; } .ds-opt { color: var(--color-text-muted, #7E8788); font-weight: 400; } .ds-input { width: 100%; height: 42px; padding: 0 12px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font: inherit; font-size: 0.875rem; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), box-shadow 150ms cubic-bezier(0.22,1,0.36,1); } .ds-input::placeholder { color: var(--color-text-muted, #7E8788); } .ds-input:hover { border-color: color-mix(in oklab, var(--color-text, #F2EEE7) 22%, transparent); } .ds-input:focus-visible { outline: none; border-color: var(--color-primary, #F4B860); box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-input.is-invalid { border-color: var(--color-danger, #E88C8C); } .ds-error { color: var(--color-danger, #E88C8C); font-size: 0.8125rem; }"
+    },
+    {
+      "name": "Month Grid with Event Pills",
+      "kind": "custom",
+      "refersTo": "month-cell",
+      "description": "7-column grid with 1px border-color gutters in a 16px frame; DM Mono dates; today amber circle; selected tint + inset ring; event pills tinted by --event-color; multi-day pills join across gutters.",
+      "html": "<div class=\"ds-month\"><div class=\"ds-cell is-outside\"><span class=\"ds-date\">29</span></div><div class=\"ds-cell is-today is-selected\"><span class=\"ds-date\">8</span><span class=\"ds-pill\" style=\"--event-color:#199e70\"><span class=\"ds-pdot\"></span><span class=\"ds-ptitle\">Doctor appointment</span></span><span class=\"ds-pill\" style=\"--event-color:#3987e5\"><span class=\"ds-pdot\"></span><span class=\"ds-ptitle\">AC service</span></span><span class=\"ds-more\">+2 more</span></div><div class=\"ds-cell\"><span class=\"ds-date\">29</span><span class=\"ds-pill ds-after\" style=\"--event-color:#d95926\"><span class=\"ds-pdot\"></span><span class=\"ds-ptitle\">Vacation</span></span></div><div class=\"ds-cell\"><span class=\"ds-date\">30</span><span class=\"ds-pill ds-before\" style=\"--event-color:#d95926\"><span class=\"ds-pdot\"></span><span class=\"ds-ptitle\">Vacation</span></span></div></div>",
+      "css": ".ds-month { display: grid; grid-template-columns: repeat(4, 120px); gap: 1px; overflow: hidden; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-border, rgba(255,255,255,0.08)); font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-cell { display: flex; flex-direction: column; gap: 4px; min-width: 0; min-height: 104px; padding: 8px; background: var(--color-surface, #15191B); transition: background-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-cell:hover { background: var(--color-surface-elevated, #192024); } .ds-cell.is-selected { background: color-mix(in oklab, var(--color-primary, #F4B860) 7%, var(--color-surface, #15191B)); box-shadow: inset 0 0 0 1.5px color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); } .ds-date { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 999px; font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; } .ds-cell.is-outside .ds-date { color: var(--color-text-muted, #7E8788); opacity: 0.6; } .ds-cell.is-today .ds-date { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); font-weight: 500; } .ds-pill { display: flex; align-items: center; gap: 5px; min-width: 0; height: 22px; padding: 0 8px; border: 1px solid color-mix(in oklab, var(--event-color) 40%, transparent); border-radius: var(--radius-sm, 10px); background: color-mix(in oklab, var(--event-color) 20%, var(--color-surface, #15191B)); font-size: 0.75rem; font-weight: 600; } .ds-pdot { flex: none; width: 6px; height: 6px; border-radius: 999px; background: var(--event-color); } .ds-ptitle { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } .ds-after { margin-right: -9px; border-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; } .ds-before { margin-left: -9px; border-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; } .ds-before .ds-pdot { visibility: hidden; } .ds-more { padding-left: 8px; color: var(--color-text-secondary, #A3ABAB); font-size: 0.6875rem; font-weight: 600; }"
+    },
+    {
+      "name": "Event Card (Agenda Row)",
+      "kind": "custom",
+      "refersTo": "event-card-compact",
+      "description": "48px DM Mono time, 30px avatar marker with 2px event-color ring, title and muted person · place; hairline separators under day headings.",
+      "html": "<div class=\"ds-agenda\"><p class=\"ds-day\">Today, Tue 8 Oct</p><ul class=\"ds-events\"><li class=\"ds-ev\" style=\"--event-color:#199e70\"><time class=\"ds-time\">09:00</time><span class=\"ds-mark\">P</span><span class=\"ds-body\"><span class=\"ds-title\">Doctor appointment</span><span class=\"ds-meta\">Priya · City Clinic</span></span></li><li class=\"ds-ev\" style=\"--event-color:#d95926\"><time class=\"ds-time\">19:00</time><span class=\"ds-mark\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75\"/></svg></span><span class=\"ds-body\"><span class=\"ds-title\">Family dinner</span><span class=\"ds-meta\">Family · Home</span></span></li></ul></div>",
+      "css": ".ds-agenda { width: 300px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-day { margin: 0 0 8px; color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 600; } .ds-events { margin: 0; padding: 0; list-style: none; } .ds-ev { display: grid; grid-template-columns: 48px auto minmax(0, 1fr); align-items: center; gap: 12px; padding: 8px 0; } .ds-ev + .ds-ev { border-top: 1px solid var(--color-border, rgba(255,255,255,0.08)); } .ds-time { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; } .ds-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: color-mix(in oklab, var(--event-color) 22%, var(--color-surface, #15191B)); box-shadow: 0 0 0 2px var(--event-color); color: var(--event-color); font-size: 0.75rem; font-weight: 600; } .ds-body { display: flex; flex-direction: column; min-width: 0; } .ds-title { overflow: hidden; font-weight: 600; white-space: nowrap; text-overflow: ellipsis; } .ds-meta { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; }"
+    },
+    {
+      "name": "Member Filter Toggle",
+      "kind": "chip",
+      "refersTo": "member-toggle",
+      "description": "Avatar with event-color ring, name and relationship; aria-pressed = shown; hidden is 55% opacity, grayscale, neutral ring, struck-through name.",
+      "html": "<div class=\"ds-members\"><button class=\"ds-member\" aria-pressed=\"true\" style=\"--event-color:#199e70\"><span class=\"ds-mav\">P</span><span class=\"ds-mtext\"><span class=\"ds-mname\">Priya</span><span class=\"ds-mrole\">Mom</span></span></button><button class=\"ds-member is-hidden\" aria-pressed=\"false\" style=\"--event-color:#3987e5\"><span class=\"ds-mav\">A</span><span class=\"ds-mtext\"><span class=\"ds-mname\">Arun</span><span class=\"ds-mrole\">Dad</span></span></button></div>",
+      "css": ".ds-members { display: grid; grid-template-columns: repeat(2, minmax(132px, 160px)); gap: 8px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-member { display: flex; align-items: center; gap: 12px; padding: 8px 12px 8px 8px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface-elevated, #192024); color: var(--color-text, #F2EEE7); font: inherit; text-align: left; cursor: pointer; transition: opacity 200ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1), filter 200ms cubic-bezier(0.22,1,0.36,1); } .ds-member:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); } .ds-member:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-mav { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-weight: 600; box-shadow: 0 0 0 2px var(--color-surface-elevated, #192024), 0 0 0 4px var(--event-color); } .ds-mtext { display: flex; flex-direction: column; min-width: 0; } .ds-mname { font-weight: 600; font-size: 0.875rem; } .ds-mrole { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-member.is-hidden { opacity: 0.55; filter: grayscale(1); } .ds-member.is-hidden .ds-mav { box-shadow: 0 0 0 2px var(--color-surface-elevated, #192024), 0 0 0 4px var(--color-border-strong, rgba(255,255,255,0.14)); } .ds-member.is-hidden .ds-mname { text-decoration: line-through; text-decoration-color: var(--color-text-muted, #7E8788); }"
+    },
+    {
+      "name": "Task Card",
+      "kind": "card",
+      "refersTo": "task-card",
+      "description": "Standalone task card: square checkbox, avatar, title + meta badges, 44px chevron to details; done state muted and struck through.",
+      "html": "<div class=\"ds-tc-wrap\"><p class=\"ds-tgroup\">Tomorrow <span class=\"ds-tcount2\">2</span></p><div class=\"ds-tc\"><button class=\"ds-tc-check\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Mark Pay electricity bill complete\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-tc-av\">A</span><span class=\"ds-tc-body\"><span class=\"ds-tc-title\">Pay electricity bill</span><span class=\"ds-tc-meta\">Arun <span class=\"ds-tc-sep\"></span> Tomorrow <span class=\"ds-tc-pri\"><span class=\"ds-tc-dot\"></span>Medium</span></span></span><button class=\"ds-tc-open\" aria-label=\"Open details\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button></div><div class=\"ds-tc is-done\"><button class=\"ds-tc-check\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Mark Kitchen cleanup not done\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-tc-av\">A</span><span class=\"ds-tc-body\"><span class=\"ds-tc-title\">Kitchen cleanup</span><span class=\"ds-tc-meta\">Anu <span class=\"ds-tc-sep\"></span> Today</span></span><button class=\"ds-tc-open\" aria-label=\"Open details\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button></div></div>",
+      "css": ".ds-tc-wrap { display: flex; flex-direction: column; gap: 8px; width: 460px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-tgroup { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 600; } .ds-tcount2 { display: grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.6875rem; } .ds-tc { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 68px; padding: 12px 8px 12px 16px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), opacity 200ms cubic-bezier(0.22,1,0.36,1); } .ds-tc:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); } .ds-tc-check { position: relative; display: grid; place-items: center; width: 20px; height: 20px; padding: 0; border-radius: 6px; border: 1.5px solid var(--color-border-strong, rgba(255,255,255,0.14)); background: transparent; color: transparent; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-tc-check::before { content: ''; position: absolute; inset: -12px; } .ds-tc-check:hover { border-color: var(--color-secondary, #8FD8C0); } .ds-tc-check[aria-checked='true'] { border-color: var(--color-secondary, #8FD8C0); background: var(--color-secondary, #8FD8C0); color: var(--color-primary-foreground, #161616); } .ds-tc-check:focus-visible, .ds-tc-open:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-tc-av { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-weight: 600; } .ds-tc-body { display: flex; flex-direction: column; min-width: 0; } .ds-tc-title { overflow: hidden; font-weight: 600; white-space: nowrap; text-overflow: ellipsis; } .ds-tc-meta { display: flex; flex-wrap: wrap; align-items: center; column-gap: 8px; color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-tc-sep { width: 5px; height: 5px; border-radius: 999px; background: var(--color-text-muted, #7E8788); } .ds-tc-pri { display: inline-flex; align-items: center; gap: 5px; color: var(--color-warning, #F4B860); font-weight: 500; } .ds-tc-dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; } .ds-tc-open { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: var(--radius-sm, 10px); background: transparent; color: var(--color-text-muted, #7E8788); cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-tc-open:hover { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-tc.is-done .ds-tc-title { color: var(--color-text-muted, #7E8788); text-decoration: line-through; } .ds-tc.is-done .ds-tc-av { opacity: 0.6; }"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "32px pill filters; priority chips carry a tone dot; selected = tone-soft fill + 70% tone border; neutral (category) selects amber-soft.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip is-selected\" aria-pressed=\"true\" style=\"--tone:#E88C8C\"><span class=\"ds-chip-dot\"></span>High</button><button class=\"ds-chip\" aria-pressed=\"false\" style=\"--tone:#F4B860\"><span class=\"ds-chip-dot\"></span>Medium</button><button class=\"ds-chip\" aria-pressed=\"false\" style=\"--tone:#8FD8C0\"><span class=\"ds-chip-dot\"></span>Low</button><span class=\"ds-chip-div\"></span><button class=\"ds-chip ds-neutral is-selected\" aria-pressed=\"true\" style=\"--tone:#A3ABAB\">Household</button><button class=\"ds-chip ds-neutral\" aria-pressed=\"false\" style=\"--tone:#A3ABAB\">Bills</button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 460px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: 999px; background: var(--color-surface-elevated, #192024); color: var(--color-text-secondary, #A3ABAB); font: inherit; font-size: 0.8125rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-chip:hover { border-color: color-mix(in oklab, var(--tone) 50%, transparent); color: var(--color-text, #F2EEE7); } .ds-chip:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-chip.is-selected { border-color: color-mix(in oklab, var(--tone) 70%, transparent); background: color-mix(in oklab, var(--tone) 14%, transparent); color: var(--color-text, #F2EEE7); } .ds-chip.ds-neutral.is-selected { border-color: color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); background: color-mix(in oklab, var(--color-primary, #F4B860) 14%, transparent); } .ds-chip-dot { width: 7px; height: 7px; border-radius: 999px; background: var(--tone); } .ds-chip-div { width: 1px; height: 20px; background: var(--color-border-strong, rgba(255,255,255,0.14)); }"
+    },
+    {
+      "name": "Choice Pills (Radio)",
+      "kind": "input",
+      "refersTo": "choice",
+      "description": "38px radio pills for single-choice form fields; checked = tone-soft fill + 70% tone border; focus ring on the pill.",
+      "html": "<fieldset class=\"ds-choicefield\"><legend class=\"ds-clabel\">Priority</legend><div class=\"ds-choices\"><label class=\"ds-choice\" style=\"--tone:#E88C8C\"><input type=\"radio\" name=\"ds-pri\" value=\"high\">High</label><label class=\"ds-choice\" style=\"--tone:#F4B860\"><input type=\"radio\" name=\"ds-pri\" value=\"medium\" checked>Medium</label><label class=\"ds-choice\" style=\"--tone:#8FD8C0\"><input type=\"radio\" name=\"ds-pri\" value=\"low\">Low</label></div></fieldset>",
+      "css": ".ds-choicefield { margin: 0; padding: 0; border: 0; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-clabel { margin-bottom: 6px; padding: 0; font-size: 0.8125rem; font-weight: 600; } .ds-choices { display: flex; flex-wrap: wrap; gap: 8px; } .ds-choice { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 16px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: 999px; background: var(--color-surface-strong, #20272A); color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-choice input { position: absolute; opacity: 0; pointer-events: none; } .ds-choice:has(input:checked) { border-color: color-mix(in oklab, var(--tone) 70%, transparent); background: color-mix(in oklab, var(--tone) 14%, transparent); color: var(--color-text, #F2EEE7); } .ds-choice:has(input:focus-visible) { box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Task Progress",
+      "kind": "custom",
+      "refersTo": "task-card",
+      "description": "132px success ring with DM Mono fraction and caption, plus a dt/dd legend with tone dots and DM Mono counts.",
+      "html": "<div class=\"ds-prog\"><div class=\"ds-ring\"><svg width=\"132\" height=\"132\" viewBox=\"0 0 132 132\"><circle cx=\"66\" cy=\"66\" r=\"60\" fill=\"none\" stroke=\"#20272A\" stroke-width=\"8\"/><circle cx=\"66\" cy=\"66\" r=\"60\" fill=\"none\" stroke=\"#8FD8C0\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-dasharray=\"377\" stroke-dashoffset=\"264\" transform=\"rotate(-90 66 66)\"/></svg><span class=\"ds-ring-c\"><span class=\"ds-ring-v\">3/10</span><span class=\"ds-ring-cap\">completed</span></span></div><dl class=\"ds-legend\"><div class=\"ds-lrow\" style=\"--tone:#8FD8C0\"><dt><span class=\"ds-ldot\"></span>Completed</dt><dd>3</dd></div><div class=\"ds-lrow\" style=\"--tone:#F4B860\"><dt><span class=\"ds-ldot\"></span>Pending</dt><dd>7</dd></div><div class=\"ds-lrow\" style=\"--tone:#E88C8C\"><dt><span class=\"ds-ldot\"></span>Overdue</dt><dd>0</dd></div></dl></div>",
+      "css": ".ds-prog { display: flex; align-items: center; gap: 20px; width: 300px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-ring { position: relative; display: grid; place-items: center; width: 132px; height: 132px; flex: none; } .ds-ring svg { position: absolute; inset: 0; } .ds-ring-c { position: relative; display: flex; flex-direction: column; align-items: center; line-height: 1.1; } .ds-ring-v { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.25rem; } .ds-ring-cap { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-legend { display: flex; flex: 1; flex-direction: column; gap: 8px; margin: 0; } .ds-lrow { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 0.8125rem; } .ds-lrow dt { display: flex; align-items: center; gap: 8px; color: var(--color-text-secondary, #A3ABAB); } .ds-lrow dd { margin: 0; font-family: var(--font-numeric, 'DM Mono', monospace); } .ds-ldot { width: 8px; height: 8px; border-radius: 999px; background: var(--tone); }"
+    },
+    {
+      "name": "Quick Add",
+      "kind": "input",
+      "refersTo": "quick-add",
+      "description": "Inline one-line add form in a padded card: fluid name, 96px qty, 150px category select, 42px primary Add.",
+      "html": "<form class=\"ds-qa\" onsubmit=\"return false\"><input class=\"ds-qa-in\" placeholder=\"Add an item, e.g. Curd\" aria-label=\"Item\"><input class=\"ds-qa-in\" placeholder=\"1 pc\" aria-label=\"Qty\"><select class=\"ds-qa-in\" aria-label=\"Category\"><option>Groceries</option><option>Household</option><option>Personal</option></select><button class=\"ds-qa-btn\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg>Add</button></form>",
+      "css": ".ds-qa { display: grid; grid-template-columns: minmax(0, 1fr) 96px 150px auto; gap: 8px; align-items: center; width: 640px; padding: 12px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-qa-in { width: 100%; height: 42px; padding: 0 12px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font: inherit; font-size: 0.875rem; color-scheme: dark; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-qa-in::placeholder { color: var(--color-text-muted, #7E8788); } .ds-qa-in:hover { border-color: color-mix(in oklab, var(--color-text, #F2EEE7) 22%, transparent); } .ds-qa-in:focus-visible { outline: none; border-color: var(--color-primary, #F4B860); box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-qa-btn { display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 16px; border: 0; border-radius: var(--radius-sm, 10px); background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); font: inherit; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-qa-btn:hover { background: color-mix(in oklab, var(--color-primary, #F4B860) 88%, white); } .ds-qa-btn:active { transform: translateY(1px); } .ds-qa-btn:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Shopping Category",
+      "kind": "card",
+      "refersTo": "shopping-category",
+      "description": "Category card: swatch, name, DM Mono count capsule; detailed rows with added-by meta, quantity and avatar; bought items sink, struck through.",
+      "html": "<section class=\"ds-sc\" style=\"--swatch:#3987e5\"><h3 class=\"ds-sc-title\"><span class=\"ds-sc-sw\"></span>Groceries<span class=\"ds-sc-count\">5</span></h3><ul class=\"ds-sc-list\"><li class=\"ds-sr\"><button class=\"ds-sr-check\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Rice\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-sr-main\"><span class=\"ds-sr-name\">Rice</span><span class=\"ds-sr-meta\">Added by Anu · Today</span></span><span class=\"ds-sr-qty\">5 kg</span><span class=\"ds-sr-av\">A</span></li><li class=\"ds-sr is-done\"><button class=\"ds-sr-check\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Milk\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></button><span class=\"ds-sr-main\"><span class=\"ds-sr-name\">Milk</span><span class=\"ds-sr-meta\">Added by Priya · Today</span></span><span class=\"ds-sr-qty\">2 L</span><span class=\"ds-sr-av\">P</span></li></ul></section>",
+      "css": ".ds-sc { width: 480px; padding: 16px 16px 8px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-sc-title { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; font-size: 0.9375rem; font-weight: 600; } .ds-sc-sw { width: 10px; height: 10px; border-radius: 999px; background: var(--swatch); } .ds-sc-count { display: grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--color-surface-strong, #20272A); color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.6875rem; font-weight: 400; } .ds-sc-list { margin: 0; padding: 0; list-style: none; } .ds-sr { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 12px; min-height: 56px; padding: 4px; } .ds-sr + .ds-sr { border-top: 1px solid var(--color-border, rgba(255,255,255,0.08)); } .ds-sr-check { position: relative; display: grid; place-items: center; width: 20px; height: 20px; padding: 0; border-radius: 6px; border: 1.5px solid var(--color-border-strong, rgba(255,255,255,0.14)); background: transparent; color: transparent; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-sr-check::before { content: ''; position: absolute; inset: -12px; } .ds-sr-check:hover { border-color: var(--color-secondary, #8FD8C0); } .ds-sr-check:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-sr-check[aria-checked='true'] { border-color: var(--color-secondary, #8FD8C0); background: var(--color-secondary, #8FD8C0); color: var(--color-primary-foreground, #161616); } .ds-sr-main { display: flex; flex-direction: column; min-width: 0; } .ds-sr-name { font-weight: 500; } .ds-sr-meta { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-sr.is-done .ds-sr-name { color: var(--color-text-muted, #7E8788); text-decoration: line-through; } .ds-sr-qty { color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; white-space: nowrap; } .ds-sr-av { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-size: 0.6875rem; font-weight: 600; }"
+    },
+    {
+      "name": "Shopping Summary",
+      "kind": "custom",
+      "refersTo": "summary-bar",
+      "description": "132px mint ring with DM Mono fraction and caption; per-category rows with swatch, DM Mono needed count and a 4px bought-share bar in the swatch color.",
+      "html": "<div class=\"ds-ss\"><div class=\"ds-ss-ring\"><svg width=\"132\" height=\"132\" viewBox=\"0 0 132 132\"><circle cx=\"66\" cy=\"66\" r=\"60\" fill=\"none\" stroke=\"#20272A\" stroke-width=\"8\"/><circle cx=\"66\" cy=\"66\" r=\"60\" fill=\"none\" stroke=\"#8FD8C0\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-dasharray=\"377\" stroke-dashoffset=\"343\" transform=\"rotate(-90 66 66)\"/></svg><span class=\"ds-ss-c\"><span class=\"ds-ss-v\">1/11</span><span class=\"ds-ss-cap\">in the cart</span></span></div><div class=\"ds-ss-rows\"><div class=\"ds-ss-row\" style=\"--swatch:#3987e5\"><span class=\"ds-ss-label\"><span class=\"ds-ss-sw\"></span>Groceries</span><span class=\"ds-ss-n\">5</span><span class=\"ds-ss-bar\"><span style=\"transform:scaleX(0.17)\"></span></span></div><div class=\"ds-ss-row\" style=\"--swatch:#199e70\"><span class=\"ds-ss-label\"><span class=\"ds-ss-sw\"></span>Household</span><span class=\"ds-ss-n\">3</span><span class=\"ds-ss-bar\"><span style=\"transform:scaleX(0)\"></span></span></div></div></div>",
+      "css": ".ds-ss { width: 280px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-ss-ring { position: relative; display: grid; place-items: center; width: 132px; height: 132px; margin: 8px auto 20px; } .ds-ss-ring svg { position: absolute; inset: 0; } .ds-ss-c { position: relative; display: flex; flex-direction: column; align-items: center; line-height: 1.1; } .ds-ss-v { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.25rem; } .ds-ss-cap { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-ss-rows { display: flex; flex-direction: column; gap: 12px; } .ds-ss-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; font-size: 0.8125rem; } .ds-ss-label { display: flex; align-items: center; gap: 8px; color: var(--color-text-secondary, #A3ABAB); } .ds-ss-sw { width: 10px; height: 10px; border-radius: 999px; background: var(--swatch); } .ds-ss-n { font-family: var(--font-numeric, 'DM Mono', monospace); } .ds-ss-bar { grid-column: 1 / -1; height: 4px; overflow: hidden; border-radius: 999px; background: var(--color-surface-strong, #20272A); } .ds-ss-bar > span { display: block; width: 100%; height: 100%; border-radius: inherit; background: var(--swatch); transform-origin: left center; transition: transform 250ms cubic-bezier(0.22,1,0.36,1); }"
+    },
+    {
+      "name": "Expense Tile",
+      "kind": "card",
+      "refersTo": "expense-tile",
+      "description": "Headline tile: 13px label, 26px DM Mono value, 12px semibold detail worded in the good-for-spending direction with tone and trend icon.",
+      "html": "<div class=\"ds-et-wrap\"><div class=\"ds-et\"><span class=\"ds-et-l\">This Month</span><span class=\"ds-et-v\">₹12,689</span><span class=\"ds-et-d ds-good\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m22 17-8.5-8.5-5 5L2 7\"/><path d=\"M16 17h6v-6\"/></svg>3% less than last month</span></div><div class=\"ds-et\"><span class=\"ds-et-l\">Pending</span><span class=\"ds-et-v\">₹2,450</span><span class=\"ds-et-d ds-warn\">2 bills due</span></div></div>",
+      "css": ".ds-et-wrap { display: grid; grid-template-columns: repeat(2, 240px); gap: 12px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-et { display: flex; flex-direction: column; gap: 2px; padding: 16px 20px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); } .ds-et-l { color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 500; } .ds-et-v { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.625rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.2; } .ds-et-d { display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; color: var(--color-text-muted, #7E8788); font-size: 0.75rem; font-weight: 600; } .ds-good { color: var(--color-success, #8FD8C0); } .ds-warn { color: var(--color-warning, #F4B860); }"
+    },
+    {
+      "name": "Category Donut + Legend",
+      "kind": "custom",
+      "refersTo": "legend-row",
+      "description": "196px donut, 26px stroke, 2px surface gaps, fixed order; legend rows are filter buttons (aria-pressed) with swatch, name, DM Mono % and amount; others dim.",
+      "html": "<div class=\"ds-bd\"><div class=\"ds-donut\"><svg width=\"196\" height=\"196\" viewBox=\"0 0 196 196\"><circle class=\"ds-dseg\" cx=\"98\" cy=\"98\" r=\"85\" fill=\"none\" stroke=\"#3987e5\" stroke-width=\"26\" stroke-dasharray=\"195.61 338.46\" stroke-dashoffset=\"0.00\" transform=\"rotate(-90 98 98)\"/><circle class=\"ds-dseg\" cx=\"98\" cy=\"98\" r=\"85\" fill=\"none\" stroke=\"#d95926\" stroke-width=\"26\" stroke-dasharray=\"131.52 402.55\" stroke-dashoffset=\"-197.61\" transform=\"rotate(-90 98 98)\"/><circle class=\"ds-dseg\" cx=\"98\" cy=\"98\" r=\"85\" fill=\"none\" stroke=\"#9085e9\" stroke-width=\"26\" stroke-dasharray=\"88.79 445.28\" stroke-dashoffset=\"-331.12\" transform=\"rotate(-90 98 98)\"/><circle class=\"ds-dseg\" cx=\"98\" cy=\"98\" r=\"85\" fill=\"none\" stroke=\"#c98500\" stroke-width=\"26\" stroke-dasharray=\"67.43 466.64\" stroke-dashoffset=\"-421.92\" transform=\"rotate(-90 98 98)\"/><circle class=\"ds-dseg\" cx=\"98\" cy=\"98\" r=\"85\" fill=\"none\" stroke=\"#199e70\" stroke-width=\"26\" stroke-dasharray=\"40.73 493.35\" stroke-dashoffset=\"-491.35\" transform=\"rotate(-90 98 98)\"/></svg><span class=\"ds-dc\"><span class=\"ds-dv\">₹12,689</span><span class=\"ds-dcap\">paid this month</span></span></div><div class=\"ds-legend2\"><button class=\"ds-lg is-selected\" aria-pressed=\"true\" style=\"--swatch:#3987e5\"><span class=\"ds-lg-sw\"></span><span class=\"ds-lg-n\">Groceries</span><span class=\"ds-lg-p\">37%</span><span class=\"ds-lg-a\">₹4,650</span></button><button class=\"ds-lg\" aria-pressed=\"false\" style=\"--swatch:#d95926\"><span class=\"ds-lg-sw\"></span><span class=\"ds-lg-n\">Transport</span><span class=\"ds-lg-p\">25%</span><span class=\"ds-lg-a\">₹3,200</span></button><button class=\"ds-lg\" aria-pressed=\"false\" style=\"--swatch:#9085e9\"><span class=\"ds-lg-sw\"></span><span class=\"ds-lg-n\">Bills</span><span class=\"ds-lg-p\">17%</span><span class=\"ds-lg-a\">₹2,130</span></button></div></div>",
+      "css": ".ds-bd { display: flex; align-items: center; gap: 24px; width: 600px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-donut { position: relative; flex: none; width: 196px; height: 196px; } .ds-dseg { transition: opacity 200ms cubic-bezier(0.22,1,0.36,1); } .ds-donut:hover .ds-dseg { opacity: 0.28; } .ds-donut .ds-dseg:hover { opacity: 1; } .ds-dc { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; } .ds-dv { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.25rem; font-weight: 500; letter-spacing: -0.03em; } .ds-dcap { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-legend2 { display: flex; flex: 1; flex-direction: column; } .ds-lg { display: grid; grid-template-columns: auto minmax(0, 1fr) 44px auto; align-items: center; gap: 12px; width: 100%; min-height: 42px; padding: 0 12px; border: 0; border-radius: var(--radius-sm, 10px); background: transparent; color: var(--color-text, #F2EEE7); font: inherit; text-align: left; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), opacity 200ms cubic-bezier(0.22,1,0.36,1); } .ds-lg:hover { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); } .ds-lg:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-lg.is-selected { background: color-mix(in oklab, var(--color-primary, #F4B860) 6%, transparent); box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); } .ds-lg-sw { width: 10px; height: 10px; border-radius: 999px; background: var(--swatch); } .ds-lg-n { font-weight: 500; } .ds-lg-p { color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; text-align: right; } .ds-lg-a { min-width: 72px; font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; text-align: right; }"
+    },
+    {
+      "name": "Monthly Trend",
+      "kind": "custom",
+      "refersTo": "trend-bar-current",
+      "description": "Single-series emphasis bars: neutral history, current month amber with value on the cap; 4px rounded tops; hairline gridlines at clean ticks; focusable bars with tooltip.",
+      "html": "<div class=\"ds-trend\"><div class=\"ds-axis\"><span>15K</span><span>10K</span><span>5K</span><span>0</span></div><div class=\"ds-area\"><div class=\"ds-grid\"><span></span><span></span><span></span><span></span></div><div class=\"ds-bars\"><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:65.3%\" aria-label=\"Apr ₹9,800\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Apr</span>₹9,800</span></button><span class=\"ds-tmonth\">Apr</span></div><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:74.7%\" aria-label=\"May ₹11,200\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">May</span>₹11,200</span></button><span class=\"ds-tmonth\">May</span></div><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:69.3%\" aria-label=\"Jun ₹10,400\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Jun</span>₹10,400</span></button><span class=\"ds-tmonth\">Jun</span></div><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:86.0%\" aria-label=\"Jul ₹12,900\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Jul</span>₹12,900</span></button><span class=\"ds-tmonth\">Jul</span></div><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:77.3%\" aria-label=\"Aug ₹11,600\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Aug</span>₹11,600</span></button><span class=\"ds-tmonth\">Aug</span></div><div class=\"ds-tcol\"><button class=\"ds-tbar\" style=\"height:87.3%\" aria-label=\"Sep ₹13,100\"><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Sep</span>₹13,100</span></button><span class=\"ds-tmonth\">Sep</span></div><div class=\"ds-tcol is-current\"><button class=\"ds-tbar\" style=\"height:84.6%\" aria-label=\"Oct ₹12,689\"><span class=\"ds-tlabel\">₹12,689</span><span class=\"ds-ttip\"><span class=\"ds-ttip-m\">Oct</span>₹12,689</span></button><span class=\"ds-tmonth\">Oct</span></div></div></div></div>",
+      "css": ".ds-trend { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 8px; width: 560px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-axis { display: flex; flex-direction: column; justify-content: space-between; height: 200px; color: var(--color-text-muted, #7E8788); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.6875rem; } .ds-axis span { display: flex; align-items: center; height: 0; } .ds-area { position: relative; } .ds-grid { position: absolute; inset: 0 0 auto; display: flex; flex-direction: column; justify-content: space-between; height: 200px; pointer-events: none; } .ds-grid span { height: 1px; background: var(--color-border, rgba(255,255,255,0.08)); } .ds-bars { position: relative; display: grid; grid-auto-columns: minmax(0, 1fr); grid-auto-flow: column; } .ds-tcol { display: grid; grid-template-rows: 200px 28px; justify-items: center; } .ds-tbar { position: relative; align-self: end; width: min(24px, 60%); min-height: 2px; padding: 0; border: 0; border-radius: 4px 4px 0 0; background: color-mix(in oklab, var(--color-text-muted, #7E8788) 42%, var(--color-surface, #15191B)); cursor: default; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-tbar:hover, .ds-tbar:focus-visible { outline: none; background: color-mix(in oklab, var(--color-text-muted, #7E8788) 75%, var(--color-surface, #15191B)); } .ds-tbar:focus-visible { box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-tcol.is-current .ds-tbar { background: var(--color-primary, #F4B860); } .ds-tcol.is-current .ds-tbar:hover, .ds-tcol.is-current .ds-tbar:focus-visible { background: color-mix(in oklab, var(--color-primary, #F4B860) 88%, white); } .ds-tlabel { position: absolute; bottom: calc(100% + 6px); left: 50%; translate: -50% 0; font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; white-space: nowrap; } .ds-ttip { position: absolute; bottom: calc(100% + 8px); left: 50%; z-index: 2; display: flex; flex-direction: column; padding: 8px 12px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); box-shadow: 0 24px 64px -12px rgba(0,0,0,0.8); color: var(--color-text, #F2EEE7); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; white-space: nowrap; opacity: 0; translate: -50% 4px; pointer-events: none; transition: opacity 150ms cubic-bezier(0.22,1,0.36,1), translate 150ms cubic-bezier(0.22,1,0.36,1); } .ds-ttip-m { color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-primary, Manrope, system-ui, sans-serif); font-size: 0.75rem; } .ds-tbar:hover .ds-ttip, .ds-tbar:focus-visible .ds-ttip { opacity: 1; translate: -50% 0; } .ds-tbar:hover .ds-tlabel, .ds-tbar:focus-visible .ds-tlabel { opacity: 0; } .ds-tmonth { align-self: center; color: var(--color-text-secondary, #A3ABAB); font-size: 0.75rem; } .ds-tcol.is-current .ds-tmonth { color: var(--color-text, #F2EEE7); font-weight: 600; }"
+    },
+    {
+      "name": "Expense Rows",
+      "kind": "custom",
+      "refersTo": "expense-row-icon",
+      "description": "Transaction row (swatch-tinted icon well, title, meta, DM Mono amount) and pending bill row with due badge and secondary sm Mark paid.",
+      "html": "<ul class=\"ds-xr-list\"><li class=\"ds-xr\" style=\"--swatch:#3987e5\"><span class=\"ds-xr-i\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"21\" r=\"1\"/><circle cx=\"19\" cy=\"21\" r=\"1\"/><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"/></svg></span><span class=\"ds-xr-b\"><span class=\"ds-xr-t\">Groceries</span><span class=\"ds-xr-m\">Today · Priya</span></span><span class=\"ds-xr-a\">₹850</span></li><li class=\"ds-xr is-pending\" style=\"--swatch:#9085e9\"><span class=\"ds-xr-i\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"/></svg></span><span class=\"ds-xr-b\"><span class=\"ds-xr-t\">Water bill</span><span class=\"ds-xr-due\"><span class=\"ds-xr-dot\"></span>in 4 days</span></span><span class=\"ds-xr-a\">₹450</span><button class=\"ds-xr-btn\">Mark paid</button></li></ul>",
+      "css": ".ds-xr-list { width: 360px; margin: 0; padding: 0; list-style: none; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-xr { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 56px; padding: 8px 0; } .ds-xr.is-pending { grid-template-columns: auto minmax(0, 1fr) auto auto; } .ds-xr + .ds-xr { border-top: 1px solid var(--color-border, rgba(255,255,255,0.08)); } .ds-xr-i { display: grid; place-items: center; width: 36px; height: 36px; border-radius: var(--radius-sm, 10px); background: color-mix(in oklab, var(--swatch) 20%, var(--color-surface, #15191B)); color: color-mix(in oklab, var(--swatch) 60%, var(--color-text, #F2EEE7)); } .ds-xr-b { display: flex; flex-direction: column; min-width: 0; } .ds-xr-t { overflow: hidden; font-weight: 600; white-space: nowrap; text-overflow: ellipsis; } .ds-xr-m { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-xr-due { display: inline-flex; align-items: center; gap: 5px; color: var(--color-warning, #F4B860); font-size: 0.75rem; font-weight: 500; } .ds-xr-dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; } .ds-xr-a { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.8125rem; white-space: nowrap; } .ds-xr-btn { height: 32px; padding: 0 12px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-xr-btn:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); background: color-mix(in oklab, var(--color-surface-strong, #20272A) 85%, var(--color-text, #F2EEE7)); } .ds-xr-btn:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Currency Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Affixed input: muted DM Mono ₹ prefix, DM Mono numeric value, standard 42px field states.",
+      "html": "<label class=\"ds-cf\"><span class=\"ds-cf-l\">Amount</span><span class=\"ds-affix\"><span class=\"ds-affix-p\">₹</span><input class=\"ds-cin\" inputmode=\"decimal\" placeholder=\"0\"></span></label>",
+      "css": ".ds-cf { display: flex; flex-direction: column; gap: 6px; width: 240px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-cf-l { font-size: 0.8125rem; font-weight: 600; } .ds-affix { position: relative; display: block; } .ds-affix-p { position: absolute; top: 50%; left: 12px; translate: 0 -50%; color: var(--color-text-muted, #7E8788); font-family: var(--font-numeric, 'DM Mono', monospace); pointer-events: none; } .ds-cin { width: 100%; height: 42px; padding: 0 12px 0 28px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.875rem; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-cin::placeholder { color: var(--color-text-muted, #7E8788); } .ds-cin:hover { border-color: color-mix(in oklab, var(--color-text, #F2EEE7) 22%, transparent); } .ds-cin:focus-visible { outline: none; border-color: var(--color-primary, #F4B860); box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Maintenance Card",
+      "kind": "card",
+      "refersTo": "maintenance-card",
+      "description": "Tone icon well, title button, meta (room, due badge, cadence), secondary sm Mark done, 44px chevron; selected amber border + 6% tint.",
+      "html": "<div class=\"ds-mc-wrap\"><div class=\"ds-mc is-selected\" style=\"--tone:#E88C8C\"><span class=\"ds-mc-i\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.8L3 10.5V16c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg></span><span class=\"ds-mc-b\"><button class=\"ds-mc-t\">Car Service</button><span class=\"ds-mc-m\">Garage <span class=\"ds-mc-due\"><span class=\"ds-mc-dot\"></span>Overdue by 1 day</span> Every 6 months</span></span><button class=\"ds-mc-done\">Mark done</button><button class=\"ds-mc-open\" aria-label=\"Open details\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button></div><div class=\"ds-mc\" style=\"--tone:#F4B860\"><span class=\"ds-mc-i\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.8L3 10.5V16c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg></span><span class=\"ds-mc-b\"><button class=\"ds-mc-t\">AC Service</button><span class=\"ds-mc-m\">Living Room <span class=\"ds-mc-due\"><span class=\"ds-mc-dot\"></span>in 2 days</span> Every 6 months</span></span><button class=\"ds-mc-done\">Mark done</button><button class=\"ds-mc-open\" aria-label=\"Open details\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button></div></div>",
+      "css": ".ds-mc-wrap { display: flex; flex-direction: column; gap: 8px; width: 560px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-mc { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 12px; min-height: 72px; padding: 12px 8px 12px 16px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), background-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-mc:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); } .ds-mc.is-selected { border-color: color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); background: color-mix(in oklab, var(--color-primary, #F4B860) 6%, var(--color-surface, #15191B)); } .ds-mc-i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--radius-sm, 10px); background: color-mix(in oklab, var(--tone) 14%, transparent); color: var(--tone); } .ds-mc-b { display: flex; flex-direction: column; min-width: 0; } .ds-mc-t { padding: 0; border: 0; border-radius: var(--radius-sm, 10px); background: none; color: inherit; font: inherit; font-weight: 600; text-align: left; cursor: pointer; } .ds-mc-t:hover { text-decoration: underline; text-underline-offset: 3px; } .ds-mc-m { display: flex; flex-wrap: wrap; align-items: center; column-gap: 8px; color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-mc-due { display: inline-flex; align-items: center; gap: 5px; color: var(--tone); font-weight: 500; } .ds-mc-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--tone); } .ds-mc-done { height: 32px; padding: 0 12px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-sm, 10px); background: var(--color-surface-strong, #20272A); color: var(--color-text, #F2EEE7); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), border-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-mc-done:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); background: color-mix(in oklab, var(--color-surface-strong, #20272A) 85%, var(--color-text, #F2EEE7)); } .ds-mc-open { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: var(--radius-sm, 10px); background: transparent; color: var(--color-text-muted, #7E8788); cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-mc-open:hover { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-mc-t:focus-visible, .ds-mc-done:focus-visible, .ds-mc-open:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; }"
+    },
+    {
+      "name": "Home Health",
+      "kind": "card",
+      "refersTo": "health-cell",
+      "description": "Three equal cells with a 2px inset top rule in tone (danger, warning, success), 20px DM Mono count and a label; never color alone.",
+      "html": "<ul class=\"ds-hh\"><li class=\"ds-hc\" style=\"--tone:#E88C8C\"><span class=\"ds-hc-n\">1</span><span class=\"ds-hc-l\">Overdue</span></li><li class=\"ds-hc\" style=\"--tone:#F4B860\"><span class=\"ds-hc-n\">2</span><span class=\"ds-hc-l\">Due this week</span></li><li class=\"ds-hc\" style=\"--tone:#8FD8C0\"><span class=\"ds-hc-n\">4</span><span class=\"ds-hc-l\">Later</span></li></ul>",
+      "css": ".ds-hh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 300px; margin: 0; padding: 0; list-style: none; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-hc { display: flex; flex-direction: column; gap: 2px; padding: 12px; border-radius: var(--radius-sm, 10px); background: var(--color-surface-elevated, #192024); box-shadow: inset 0 2px 0 var(--tone); } .ds-hc-n { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 1.25rem; font-weight: 500; line-height: 1.2; } .ds-hc-l { color: var(--color-text-secondary, #A3ABAB); font-size: 0.75rem; }"
+    },
+    {
+      "name": "Asset Details + Service History",
+      "kind": "custom",
+      "refersTo": "asset-icon",
+      "description": "Hero (56px tone icon well, title, room, Overdue pill), 40px fact rows, 44px primary Mark done, Service History timeline with 28px success-check nodes and DM Mono dates.",
+      "html": "<section class=\"ds-ad\"><div class=\"ds-ad-hero\"><span class=\"ds-ad-i\" style=\"--tone:#E88C8C\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.8L3 10.5V16c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg></span><span class=\"ds-ad-n\"><span class=\"ds-ad-t\">Car Service</span><span class=\"ds-ad-r\">Garage</span></span><span class=\"ds-ad-badge\"><span class=\"ds-ad-dot\"></span>Overdue</span></div><dl class=\"ds-ad-facts\"><div><dt>Last serviced</dt><dd>5 Apr</dd></div><div><dt>Next service</dt><dd>Mon, 7 Oct</dd></div><div><dt>Repeats</dt><dd>Every 6 months</dd></div></dl><button class=\"ds-ad-act\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg>Mark done</button><h4 class=\"ds-ad-sub\">Service History</h4><ol class=\"ds-sh\"><li class=\"ds-sh-i\"><span class=\"ds-sh-node\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span class=\"ds-sh-b\"><span class=\"ds-sh-t\">Regular service</span><span class=\"ds-sh-m\">Arun</span></span><span class=\"ds-sh-d\">5 Apr</span></li><li class=\"ds-sh-i\"><span class=\"ds-sh-node\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span class=\"ds-sh-b\"><span class=\"ds-sh-t\">Tyre rotation</span><span class=\"ds-sh-m\">Oil change · Arun</span></span><span class=\"ds-sh-d\">8 Oct 2023</span></li></ol></section>",
+      "css": ".ds-ad { width: 300px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); font-size: 0.875rem; } .ds-ad-hero { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; } .ds-ad-i { display: grid; place-items: center; flex: none; width: 56px; height: 56px; border-radius: var(--radius-md, 16px); background: color-mix(in oklab, var(--tone) 16%, transparent); color: var(--tone); } .ds-ad-n { display: flex; flex: 1; flex-direction: column; min-width: 0; } .ds-ad-t { font-size: 1.0625rem; font-weight: 700; } .ds-ad-r { color: var(--color-text-muted, #7E8788); font-size: 0.8125rem; } .ds-ad-badge { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 8px; border-radius: 999px; background: color-mix(in oklab, var(--color-danger, #E88C8C) 16%, transparent); color: var(--color-danger, #E88C8C); font-size: 0.75rem; font-weight: 600; } .ds-ad-dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; } .ds-ad-facts { display: flex; flex-direction: column; margin: 0 0 16px; } .ds-ad-facts div { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; border-bottom: 1px solid var(--color-border, rgba(255,255,255,0.08)); font-size: 0.8125rem; } .ds-ad-facts dt { color: var(--color-text-secondary, #A3ABAB); } .ds-ad-facts dd { margin: 0; font-weight: 600; } .ds-ad-act { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 44px; border: 0; border-radius: var(--radius-sm, 10px); background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-ad-act:hover { background: color-mix(in oklab, var(--color-primary, #F4B860) 88%, white); } .ds-ad-act:active { transform: translateY(1px); } .ds-ad-act:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-ad-sub { margin: 20px 0 12px; color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 600; } .ds-sh { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; } .ds-sh-i { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: start; gap: 12px; padding-bottom: 16px; } .ds-sh-i:last-child { padding-bottom: 0; } .ds-sh-node { position: relative; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 999px; border: 1px solid var(--color-border-strong, rgba(255,255,255,0.14)); background: var(--color-surface-strong, #20272A); color: var(--color-success, #8FD8C0); } .ds-sh-i:not(:last-child) .ds-sh-node::after { content: ''; position: absolute; top: calc(100% + 4px); left: 50%; width: 1px; height: 10px; background: var(--color-border-strong, rgba(255,255,255,0.14)); } .ds-sh-b { display: flex; flex-direction: column; min-width: 0; padding-top: 3px; } .ds-sh-t { font-weight: 600; } .ds-sh-m { color: var(--color-text-muted, #7E8788); font-size: 0.75rem; } .ds-sh-d { padding-top: 5px; color: var(--color-text-secondary, #A3ABAB); font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; white-space: nowrap; }"
+    },
+    {
+      "name": "Member Card",
+      "kind": "card",
+      "refersTo": "member-card",
+      "description": "Full-surface toggle (aria-pressed = profile shown): 64px avatar with identity halo, name with You pill, muted relationship, dot-separated stats; selected amber border + 7% tint.",
+      "html": "<div class=\"ds-fg\"><button class=\"ds-mcard is-selected\" aria-pressed=\"true\" style=\"--event-color:#3987e5\"><span class=\"ds-mcard-av\">A</span><span class=\"ds-mcard-n\">Arun<span class=\"ds-you\">You</span></span><span class=\"ds-mcard-r\">Dad</span><span class=\"ds-mcard-s\"><span>2 tasks</span><span>3 events</span></span></button><button class=\"ds-mcard\" aria-pressed=\"false\" style=\"--event-color:#199e70\"><span class=\"ds-mcard-av\">P</span><span class=\"ds-mcard-n\">Priya</span><span class=\"ds-mcard-r\">Mom</span><span class=\"ds-mcard-s\"><span>2 tasks</span><span>1 event</span></span></button></div>",
+      "css": ".ds-fg { display: grid; grid-template-columns: repeat(2, 200px); gap: 12px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); } .ds-mcard { --bg: var(--color-surface, #15191B); display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%; padding: 20px 12px 16px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--bg); box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px -12px rgba(0,0,0,0.6); color: var(--color-text, #F2EEE7); font: inherit; text-align: center; cursor: pointer; transition: border-color 150ms cubic-bezier(0.22,1,0.36,1), background-color 150ms cubic-bezier(0.22,1,0.36,1), transform 150ms cubic-bezier(0.22,1,0.36,1); } .ds-mcard:hover { border-color: var(--color-border-strong, rgba(255,255,255,0.14)); transform: translateY(-1px); } .ds-mcard:active { transform: translateY(0); } .ds-mcard:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-mcard.is-selected { --bg: color-mix(in oklab, var(--color-primary, #F4B860) 7%, var(--color-surface, #15191B)); border-color: color-mix(in oklab, var(--color-primary, #F4B860) 45%, transparent); } .ds-mcard-av { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: 12px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-size: 1.25rem; font-weight: 600; box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--event-color); } .ds-mcard-n { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9375rem; font-weight: 600; } .ds-you { padding: 1px 6px; border-radius: 999px; background: color-mix(in oklab, var(--color-primary, #F4B860) 14%, transparent); color: var(--color-primary, #F4B860); font-size: 0.6875rem; font-weight: 600; } .ds-mcard-r { color: var(--color-text-muted, #7E8788); font-size: 0.8125rem; } .ds-mcard-s { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 8px; margin-top: 12px; color: var(--color-text-secondary, #A3ABAB); font-size: 0.75rem; } .ds-mcard-s > span + span::before { content: '·'; margin-right: 8px; color: var(--color-text-muted, #7E8788); }"
+    },
+    {
+      "name": "Member Profile Header",
+      "kind": "custom",
+      "refersTo": "profile-spent-pill",
+      "description": "56px haloed avatar, 20px bold name, muted relationship, spent pill (only when non-zero), full-row segmented tabs with counts, amber Open link.",
+      "html": "<section class=\"ds-prof\" style=\"--event-color:#3987e5\"><div class=\"ds-prof-h\"><span class=\"ds-prof-av\">A</span><span class=\"ds-prof-id\"><span class=\"ds-prof-n\">Arun</span><span class=\"ds-prof-r\">Dad</span></span><span class=\"ds-prof-spent\">₹8,190 paid this month</span></div><div class=\"ds-prof-tabs\" role=\"tablist\"><button class=\"is-selected\" role=\"tab\" aria-selected=\"true\">Tasks <span>2</span></button><button role=\"tab\" aria-selected=\"false\">Calendar <span>3</span></button><button role=\"tab\" aria-selected=\"false\">Expenses <span>5</span></button><button role=\"tab\" aria-selected=\"false\">Activity <span>1</span></button></div><a class=\"ds-prof-open\" href=\"#\">Open Tasks</a></section>",
+      "css": ".ds-prof { width: 560px; padding: 16px 20px 20px; border: 1px solid var(--color-border, rgba(255,255,255,0.08)); border-radius: var(--radius-md, 16px); background: var(--color-surface, #15191B); font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-prof-h { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-bottom: 16px; } .ds-prof-av { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-weight: 600; box-shadow: 0 0 0 3px var(--color-surface, #15191B), 0 0 0 5px var(--event-color); } .ds-prof-id { display: flex; flex: 1; flex-direction: column; min-width: 0; } .ds-prof-n { font-size: 1.25rem; font-weight: 700; } .ds-prof-r { color: var(--color-text-muted, #7E8788); font-size: 0.8125rem; } .ds-prof-spent { padding: 4px 12px; border-radius: 999px; background: var(--color-surface-strong, #20272A); color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; } .ds-prof-tabs { display: flex; gap: 4px; padding: 3px; overflow-x: auto; border-radius: 999px; background: var(--color-surface-strong, #20272A); } .ds-prof-tabs button { flex: 1 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 32px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; color: var(--color-text-secondary, #A3ABAB); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1), color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-prof-tabs button span { font-family: var(--font-numeric, 'DM Mono', monospace); font-size: 0.75rem; opacity: 0.75; } .ds-prof-tabs button:hover:not(.is-selected) { background: color-mix(in oklab, var(--color-text, #F2EEE7) 5%, transparent); color: var(--color-text, #F2EEE7); } .ds-prof-tabs button.is-selected { background: var(--color-primary, #F4B860); color: var(--color-primary-foreground, #161616); } .ds-prof-tabs button:focus-visible, .ds-prof-open:focus-visible { outline: none; box-shadow: 0 0 0 2px #111315, 0 0 0 4px #F4B860; } .ds-prof-open { display: inline-block; margin: 12px 0 0 -8px; padding: 4px 8px; border-radius: var(--radius-sm, 10px); color: var(--color-primary, #F4B860); font-size: 0.8125rem; font-weight: 600; text-decoration: none; transition: background-color 150ms cubic-bezier(0.22,1,0.36,1); } .ds-prof-open:hover { background: color-mix(in oklab, var(--color-primary, #F4B860) 6%, transparent); text-decoration: underline; text-underline-offset: 3px; }"
+    },
+    {
+      "name": "Family Activity Feed",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Whole-family feed grouped under Today / Yesterday / date headings; avatar, bold name + action, time ago; hairlines within a group.",
+      "html": "<div class=\"ds-feed\"><section><h4 class=\"ds-feed-h\">Today</h4><ul class=\"ds-feed-l\"><li class=\"ds-feed-i\"><span class=\"ds-feed-av\">P</span><span class=\"ds-feed-b\"><span class=\"ds-feed-t\"><strong>Priya</strong> added Milk to Shopping</span><span class=\"ds-feed-time\">2h ago</span></span></li><li class=\"ds-feed-i\"><span class=\"ds-feed-av\">A</span><span class=\"ds-feed-b\"><span class=\"ds-feed-t\"><strong>Anu</strong> completed Kitchen cleanup</span><span class=\"ds-feed-time\">3h ago</span></span></li></ul></section><section><h4 class=\"ds-feed-h\">Yesterday</h4><ul class=\"ds-feed-l\"><li class=\"ds-feed-i\"><span class=\"ds-feed-av\">A</span><span class=\"ds-feed-b\"><span class=\"ds-feed-t\"><strong>Arun</strong> paid Electricity bill</span><span class=\"ds-feed-time\">14h ago</span></span></li></ul></section></div>",
+      "css": ".ds-feed { display: flex; flex-direction: column; gap: 16px; width: 280px; font-family: var(--font-primary, Manrope, system-ui, sans-serif); color: var(--color-text, #F2EEE7); } .ds-feed-h { margin: 0 0 8px; color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; font-weight: 600; } .ds-feed-l { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; } .ds-feed-i { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 12px; padding: 8px 0; } .ds-feed-i + .ds-feed-i { border-top: 1px solid var(--color-border, rgba(255,255,255,0.08)); } .ds-feed-av { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: var(--color-surface-strong, #20272A); font-size: 0.75rem; font-weight: 600; } .ds-feed-b { display: flex; flex-direction: column; min-width: 0; } .ds-feed-t { color: var(--color-text-secondary, #A3ABAB); font-size: 0.8125rem; line-height: 1.35; } .ds-feed-t strong { color: var(--color-text, #F2EEE7); font-weight: 600; } .ds-feed-time { margin-top: 2px; color: var(--color-text-muted, #7E8788); font-size: 0.75rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lit House at Night",
+    "overview": "HomeOS is a dark, ambient room with the lamps on. The page is near-black slate warmed by a faint amber wash from above; the isometric house sits at the center lit from inside, and everything around it is quiet, rounded, compact UI that reads like the house's control panel. Warmth comes from one source, amber lamplight, used for the active, primary and \"look here\" moments; soft mint is the calm counterpart for done, healthy and secondary information. Everything else is neutral.\n\nDensity is compact but unhurried: 14px body text, 12px meta lines, 16px gaps between cards, rows separated by hairlines rather than boxes. Surfaces are layered by small tonal steps of slate, a hairline border and a soft downward shadow; nothing is glossy, nothing is loud.\n\nThe system is configuration-driven. Every product value (palette, font stacks, radii, page/card spacing, shadows, motion) lives in `.impeccable/config/product.config.ts` under `theme` and is injected onto `:root` as CSS custom properties by `src/lib/theme.ts` at startup. `src/styles/tokens.css` holds the structural scale (type steps, 4px spacing scale, component dimensions, z-layers) plus semantic tokens derived from the injected palette with `color-mix(in oklab, ...)`. `src/styles/globals.css` holds all component styles and writes no literal product colors, fonts or radii. A new product re-themes by editing the config; components stay untouched.",
+    "keyCharacteristics": [
+      "Dark ambient canvas with a single warm light source (amber) and one calm counterpart (mint).",
+      "Restrained color: neutrals carry the screen; accents mark state, action and selection only.",
+      "One UI family (Manrope) at a fixed ~1.125 rem scale; DM Mono only for numerals.",
+      "Rounded, softly lit surfaces: 10px controls, 16px cards, pill chips and markers.",
+      "The isometric house is the centerpiece, with room markers that scale with it; one scene asset serves both the whole-house view and every room close-up.",
+      "Configurable product values vs. structural scale, strictly separated."
+    ],
+    "rules": [
+      {
+        "name": "The One Lamp Rule",
+        "body": "Amber marks what is active, primary, selected or needs attention, and nothing else. It never fills a card or a section background; at most it washes the active nav item and pools as light under the house.",
+        "section": "colors"
+      },
+      {
+        "name": "The Not By Color Alone Rule",
+        "body": "State always carries text or shape alongside color: badges pair a dot with a word (\"High\", \"overdue\"), alert rooms swap their icon to a warning glyph and add \"needs attention\" for assistive tech, the active nav item adds weight and an edge bar. Calendar events are always labelled by title and person (\"Priya · City Clinic\"), so a member's color is never the only way to tell whose event it is.",
+        "section": "colors"
+      },
+      {
+        "name": "The Blue Never Touches Violet Rule",
+        "body": "Chart slot 0 (blue) and slot 4 (violet) are nearly indistinguishable under color-vision deficiency (all-pairs CVD ΔE 1.9), so they must never be adjacent in any ordered or cyclic encoding. A donut is a cycle, so check the wrap-around pair too. Any new category order is validated against this before it ships.",
+        "section": "colors"
+      },
+      {
+        "name": "The Config Owns Color Rule",
+        "body": "Components never write a hex. Product colors come from the theme config; every tint, ring and state is a `color-mix` derived in tokens.css, so a new palette re-themes all of them.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "Manrope is the only UI family. There is no separate display face and no fluid type; hierarchy comes from weight (400/500/600/700) and the fixed steps.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Is For Numbers Rule",
+        "body": "DM Mono sets numbers and measurements (times, amounts, counts, calendar dates, fractions like \"3/10\", and quantities with their unit, such as \"5 kg\", \"12 pcs\" or \"2 L\", because a quantity is one measurement). Never use it for labels, headings or prose; a word that stands alone in a numeric column (\"All day\") switches to Manrope.",
+        "section": "typography"
+      },
+      {
+        "name": "The Soft Light Rule",
+        "body": "Shadows are diffuse and fall downward with negative spread; there are no hard or offset shadows. Hover lifts are 1–2px of translate plus a one-step tonal raise, never a bigger shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put new product values in `theme` in the product config and read them through the injected custom properties; derive tints with `color-mix` in tokens.css.",
+      "Do keep amber for active, primary, selected and attention states, and mint for done, healthy and secondary information.",
+      "Do pair every color-coded state with text or a shape change (dot + word, icon swap, weight + edge bar).",
+      "Do use the fixed rem steps (11–26px) and Manrope weights for hierarchy; set times, amounts and counts in DM Mono.",
+      "Do use Text Muted (#7E8788 via `--color-text-muted`) or stronger for any text, including 12px meta.",
+      "Do separate list rows with hairlines and layer surfaces with the slate steps plus the Card shadow.",
+      "Do lay out dashboard-like screens with container queries, and the shell with the 1200 / 768 viewport breakpoints.",
+      "Do size scene overlays with container units and em so they scale with the artwork, with a configured minimum footprint.",
+      "Do show room close-ups by zooming the one scene asset to the room's configured `focus`; keep room selection in the URL.",
+      "Do put secondary panels inline at 1200px and up and in a Drawer below that (right on tablet, bottom sheet on phones).",
+      "Do color people through `--event-color` from their configured chart slot, mixed as a tint, border, dot or ring, and always label events with title and person.",
+      "Do use the segmented pill track for view switching and panel tabs, with the selected segment in solid amber.",
+      "Do build form fields as a 13px/600 label over a 42px strong-slate input, with an amber focus border and a danger border plus message on error.",
+      "Do use 32px pill chips for filters (tone dot for priority, tone-soft when selected) and 38px choice pills for single-choice form inputs; on phones, put the filters in one scrolling strip.",
+      "Do group lists under due headings with DM Mono count capsules, and open item details in the shared Drawer (right on wider screens, bottom sheet on phones).",
+      "Do ship only tabs and filters backed by real data; filter options such as categories are derived from the data.",
+      "Do name an action for what the product actually does (\"Mark done\" logs a service and reschedules) and route every entry point through the same shared action, with Undo.",
+      "Do keep a detail panel inline in the split aside at 1200px and up and in the Drawer below that, frameless inside the sheet.",
+      "Do mark a person with the identity halo (surface gap + 2px `--event-color` ring) wherever their avatar stands for them, and reuse existing list components in per-person panels.",
+      "Do build list-plus-summary screens on the shared split page (900 / 560 container breakpoints) with `.page-tabs` segments that never squeeze below their label.",
+      "Do add one-line items inline (quick add) and keep modals for multi-field create flows; a header action for an inline form focuses that form.",
+      "Do color categories through `--swatch` from `shoppingScreen.categoryColors` or the expense categories' `colorIndex`, always beside the category name.",
+      "Do use the categorical chart palette only for identity (people, categories), keep chart order fixed, and keep blue (slot 0) and violet (slot 4) apart, including across a donut's wrap-around.",
+      "Do show a single trend in the emphasis pattern: neutral history, the current value in amber with its label on the cap, hairline gridlines at clean ticks, a tooltip on hover and focus, and a hidden data table as the accessible twin.",
+      "Do word deltas in the direction that is good for the user (\"less\" spending is success) and pair the tone with a trend icon and words.",
+      "Do use 150/200/250ms on `cubic-bezier(0.22, 1, 0.36, 1)` and honor reduced motion."
+    ],
+    "donts": [
+      "Don't write hex colors, font names or radii in component CSS; globals.css reads tokens only.",
+      "Don't fill cards or sections with amber, or introduce a third accent. Chart colors are identity, not accents, and amber is never a chart slot.",
+      "Don't signal state by color alone.",
+      "Don't add a second UI typeface, a display face or fluid type; don't use DM Mono for words other than a unit attached to a number.",
+      "Don't use pure white text, pure black surfaces, or the old #687174 muted gray.",
+      "Don't use hard or offset shadows; lift with tone and a 1–2px translate.",
+      "Don't use square corners; controls start at 10px and chips are pills. The only smaller radius is the 6px checkbox.",
+      "Don't ship a second image per room or bake room labels into the scene art.",
+      "Don't hard-code a person's color or fill whole cells or cards with it; member color reaches components only through `--event-color`.",
+      "Don't sort donut or legend segments by value; the fixed config order is what keeps the validated color adjacency.",
+      "Don't ship actions or tabs with no feature behind them (no \"View Reports\", \"Set Budget\", \"Book\" or \"Invite Member\" placeholders), and don't add quick-action tiles that only duplicate navigation.",
+      "Don't set standalone words in DM Mono, even inside a numeric column (\"All day\" is Manrope); only a unit attached to its number (\"5 kg\") stays in DM Mono."
+    ]
+  }
+}

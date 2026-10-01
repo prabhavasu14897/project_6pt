@@ -1,0 +1,70 @@
+/*
+ * Design tokens.
+ *
+ * Product values (colors, fonts, radius, spacing, shadows, motion) are injected onto :root at
+ * startup from the product config by src/lib/theme.ts. This file only defines the structural
+ * scale and the semantic tokens derived from those product values, so a new configuration
+ * re-themes every derived tint, ring and state automatically.
+ */
+:root {
+  /* Type scale — fixed rem steps (~1.125), product UI does not use fluid type. */
+  --text-2xs: 0.6875rem; /* 11 */
+  --text-xs: 0.75rem; /* 12 */
+  --text-sm: 0.8125rem; /* 13 */
+  --text-md: 0.875rem; /* 14 */
+  --text-base: 0.9375rem; /* 15 */
+  --text-lg: 1.0625rem; /* 17 */
+  --text-xl: 1.25rem; /* 20 */
+  --text-2xl: 1.625rem; /* 26 */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing scale (4px base). */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Component dimensions. */
+  --sidebar-width: 232px;
+  --sidebar-width-compact: 84px;
+  --header-height: 60px;
+  --mobile-nav-height: 68px;
+  --nav-item-height: 44px;
+  --control-height: 40px;
+  --control-height-sm: 32px;
+  --touch-target: 44px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --content-max: 1480px;
+
+  /* Layers. */
+  --z-sticky: 20;
+  --z-nav: 30;
+  --z-toast: 60;
+
+  /* Derived semantic tokens — computed from the injected product palette. */
+  --color-primary-soft: color-mix(in oklab, var(--color-primary) 14%, transparent);
+  --color-primary-faint: color-mix(in oklab, var(--color-primary) 6%, transparent);
+  --color-primary-border: color-mix(in oklab, var(--color-primary) 45%, transparent);
+  --color-primary-hover: color-mix(in oklab, var(--color-primary) 88%, white);
+  --color-secondary-soft: color-mix(in oklab, var(--color-secondary) 14%, transparent);
+  --color-success-soft: color-mix(in oklab, var(--color-success) 14%, transparent);
+  --color-warning-soft: color-mix(in oklab, var(--color-warning) 14%, transparent);
+  --color-danger-soft: color-mix(in oklab, var(--color-danger) 16%, transparent);
+  --color-hover: color-mix(in oklab, var(--color-text) 5%, transparent);
+  --color-pressed: color-mix(in oklab, var(--color-text) 9%, transparent);
+  --color-glass: color-mix(in oklab, var(--color-surface) 90%, transparent);
+  --color-scrim: color-mix(in oklab, var(--color-background) 72%, transparent);
+  --focus-ring: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-primary);
+}
